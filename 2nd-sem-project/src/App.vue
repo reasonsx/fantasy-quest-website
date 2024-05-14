@@ -15,6 +15,7 @@ import { RouterLink, RouterView } from 'vue-router'
         <RouterLink to="/about">About</RouterLink>
       </nav>
       <p>change to main test</p>
+      <h6>karolina made this</h6>
     </div>
   </header>
 
