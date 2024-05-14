@@ -7,6 +7,7 @@ import { RouterLink, RouterView } from 'vue-router'
   <header>
 
     <div class="wrapper">
+      <h1>2nd Sem Project</h1>
       <!-- <HelloWorld msg="You did it!" /> -->
 
       <nav>
