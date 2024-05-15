@@ -16,13 +16,14 @@ import Portals from '../assets/components/Portals.vue';
         <div class="portals-container">
             <div class="day-portal-container">
                 <div class="portal-box"></div>
-                <button class="primary-button">
-                    <p>Buy Ticket</p>
-                </button>
+                    <button class="primary-button"><p>Buy Ticket</p></button>
             </div>
-
-            <div class="portal-box"></div>
+                    <img src="../assets/img/gold-sword-svg.svg" alt="">
+                    <div class="evening-portal-container">
+                        <div class="portal-box"></div>
+                    </div>
         </div>
+        
 
 
         <div class="about-background-container">
@@ -65,10 +66,14 @@ import Portals from '../assets/components/Portals.vue';
 <style>
 
 .portals-container {
-    width: 1120px;
+    width: auto;
     display: flex;
-    justify-content: space-between;
-    margin: 10px;
+    justify-content: space-evenly;
+    padding: 0 10%;
+}
+.portals-container img {
+    width: auto;
+    height: 600px;
 
 }
 
@@ -81,13 +86,16 @@ import Portals from '../assets/components/Portals.vue';
 .portal-box {
     position: relative;
     width: 352px;
-    height: 560px;
-    background-color: #ffffff;
+    height: 600px;
+    background-color: var(--gold-color);
     border-radius: 176px 176px 0 0;
     border: 12px solid var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
-
+  --mask: radial-gradient(32px at 32px 100%,#0000 98%,#000) -32px;
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+          
 }
 
 
