@@ -1,11 +1,20 @@
 <script setup>
-// import TheWelcome from '../components/TheWelcome.vue'
+ import Portals from '../assets/components/Portals.vue';
 </script>
 
 <template>
-    <nav>
-        <RouterLink to="/day">Day</RouterLink>
-        <RouterLink to="/evening">Evening</RouterLink>
-        <!-- tu damy divy  -->
-    </nav>
+    <div class="home">
+        <Portals />
+        <nav>
+            <RouterLink to="/day">Day</RouterLink>
+            <RouterLink to="/evening">Evening</RouterLink>
+            <!-- divs of the portals  -->
+        </nav>
+        
+    </div>
+    
 </template>
+
+<style>
+    
+</style>

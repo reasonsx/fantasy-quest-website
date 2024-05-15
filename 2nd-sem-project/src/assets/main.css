@@ -8,3 +8,9 @@
     --primary-font: 'Exocet', sans-serif;
     --secondary-font: 'Darker Grotesque', sans-serif;
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
