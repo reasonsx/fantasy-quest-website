@@ -6,12 +6,7 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
 
-    <div class="wrapper">
-      <!-- <HelloWorld msg="You did it!" /> -->
-
      
-      <p>change to main test</p>
-    </div>
   </header>
   <body>
     
