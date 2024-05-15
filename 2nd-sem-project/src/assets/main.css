@@ -9,6 +9,23 @@
     --primary-font: 'Exocet', sans-serif;
     --secondary-font: 'Darker Grotesque', sans-serif;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #a3883c;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #a3883c;
+    border-radius: 16px;
+    border: 3px solid #FFF6E9;
+  }
 
 *{
     margin: 0;
