@@ -63,13 +63,7 @@ import Portals from '../assets/components/Portals.vue';
 </template>
 
 <style>
-h2 {
-    font-family: 'Exocet', sans-serif;
-    font-size: 56px;
-    color: #FFF6E9;
-    margin: 24px 0;
-    text-align: center;
-}
+
 .portals-container {
     width: 1120px;
     display: flex;
@@ -189,6 +183,11 @@ h2 {
     overflow: hidden;
     display: flex;
     flex-direction: column;
+}
+.quest-container h2 {
+    color: #FFF6E9;
+    margin: 24px 0;
+    text-align: center;
 }
 
 .quest-box {

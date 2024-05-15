@@ -31,8 +31,13 @@ body {
   display: flex;
   flex-direction: column;
 }
+h2 {
+    font-family: var(--primary-font);
+    font-size: 56px;
+    color: var(--gold-color);
+}
 p {
-  font-family: 'Dark Grotesque', sans-serif;
+  font-family: var(--secondary-font);
   font-size: 24px;
 }
 
