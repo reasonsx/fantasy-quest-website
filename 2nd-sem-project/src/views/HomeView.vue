@@ -159,7 +159,7 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 0 64px 0;
+    padding: 64px 0 80px 0;
 }
 .about-container h2 {
     color: #FFF6E9;
