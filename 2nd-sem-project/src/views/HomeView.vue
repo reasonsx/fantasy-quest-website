@@ -3,7 +3,9 @@
 </script>
 
 <template>
-  <!-- <main>
-    <TheWelcome />
-  </main> -->
+    <nav>
+        <RouterLink to="/day">Day</RouterLink>
+        <RouterLink to="/evening">Evening</RouterLink>
+        <!-- tu damy divy  -->
+    </nav>
 </template>

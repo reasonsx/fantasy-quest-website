@@ -6,18 +6,17 @@ import { RouterLink, RouterView } from 'vue-router'
 <template>
   <header>
 
-    <div class="wrapper">
-      <h1>2nd Sem Project</h1>
-      <!-- <HelloWorld msg="You did it!" /> -->
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-      <h1>karolina made this in main</h1>
-      <p>change to main test</p>
-    </div>
   </header>
+  <body>
+    
+  </body>
 
   <RouterView />
 </template>
+<style>
+body { background-image: url('../src/assets/img/background-svg.svg'); }
+p {
+  font-family: 'Dark Grotesque', sans-serif;
+}
+</style>
