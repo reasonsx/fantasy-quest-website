@@ -13,6 +13,8 @@ import Portals from '../assets/components/Portals.vue';
     </div>
 
     <body>
+        <div class="portals-background-container">
+        <h2>CHOOSE YOUR SIDE</h2>
         <div class="portals-container">
             <div class="day-portal-container">
                 <div class="portal-box"></div>
@@ -23,6 +25,7 @@ import Portals from '../assets/components/Portals.vue';
                         <div class="portal-box"></div>
                     </div>
         </div>
+    </div>
         
 
 
@@ -33,6 +36,7 @@ import Portals from '../assets/components/Portals.vue';
         </div>
 
         <div class="discover-container">
+            <h2>Discover</h2>
             <div class="discover-boxes-container">
                 <div class="discover-box">
                     <div class="discover-box-top"></div>
@@ -54,8 +58,10 @@ import Portals from '../assets/components/Portals.vue';
         <div class="quests-background-container">
             <div class="grey-torn-paper-top"></div>
             <div class="quests-container">
-                <div class="quest-container"><div class="quest-box"></div><h2>Day Quest</h2></div>
-                <div class="quest-container"><div class="quest-box"></div><h2>Evening Quest</h2></div>
+                <div class="quest-container"><div class="quest-box"></div><h2>Day Quest</h2><p>Experience an enchanting family adventure at the Day Quest during Fantasy Quest Esbjerg. Solve puzzles, conquer challenges, and become the heroes of Esbjerg in a fantasy world brought to life. Suitable for all ages, this immersive experience promises a day of magical fun and teamwork amidst the bustling Fantasy Festival.
+            </p>
+        </div>
+                <div class="quest-container"><div class="quest-box"></div><h2>Evening Quest</h2><p>Step into the shadows and become the hero of a thrilling adventure during the Evening Quest at Fantasy Quest Esbjerg. Confront darkness, solve challenges, and save Esbjerg from evil forces as twilight descends. Join alone or with friends for an unforgettable journey under the stars.</p></div>
             </div>
             <div class="grey-torn-paper-bottom"></div>
         </div>
@@ -64,7 +70,15 @@ import Portals from '../assets/components/Portals.vue';
 </template>
 
 <style>
-
+.portals-background-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.portals-background-container h2 {
+    color: var(--gold-color);
+    text-align: center;
+}
 .portals-container {
     width: auto;
     display: flex;
@@ -144,13 +158,20 @@ import Portals from '../assets/components/Portals.vue';
     box-sizing: border-box;
     overflow: hidden;
     padding: 0 10%;
+    margin: 32px 0 0 0;
+}
+.discover-container h2 {
+    color: var(--gold-color);
+    margin: 24px 0;
+    text-align: center;
+    margin: 32px 0 64px 0;
 }
 
 .discover-boxes-container {
     display: flex;
     justify-content: space-evenly;
     height: auto;
-    margin: 128px 0;
+    margin: 0 0 128px 0;
 }
 
 .discover-box {
@@ -191,13 +212,18 @@ import Portals from '../assets/components/Portals.vue';
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    margin-bottom: 64px;
 }
 .quest-container h2 {
     color: #FFF6E9;
     margin: 24px 0;
-    text-align: center;
+    text-align: left;
 }
-
+.quest-container p {
+    color: #FFF6E9;
+    font-size: 24px;
+    /* text-align: center; */
+}
 .quest-box {
     width: 544px;
     height: 306px;
