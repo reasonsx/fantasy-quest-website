@@ -32,6 +32,15 @@ import { RouterLink, RouterView } from 'vue-router'
         referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 
+    <div class="about-background-container">
+    <div class="torn-paper-top"></div>
+
+
+
+      <div class="about-container"></div>
+      <div class="torn-paper-bottom"></div>
+    </div>
+
   </body>
 
 
@@ -41,10 +50,10 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <style>
 body {
-  background-image: url('../src/assets/img/background-svg.svg');
+  /* background-image: url('../src/assets/img/background-svg.svg'); */
+  background-color: #FFF6E9;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 p {
@@ -63,7 +72,20 @@ li {
   margin: 10px;
 
 }
-
+.torn-paper-top {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/torn-paper-top-svg.svg') no-repeat;
+  background-size: cover;
+}
+.torn-paper-bottom {
+  display: flex;
+  height: 144px;
+  width: 100%;
+  background: url('../src/assets/img/torn-paper-bottom-svg.svg') no-repeat;
+  background-size: cover;
+}
 .logo {
   background-color: #7a7a7a;
   width: 30px;
@@ -89,7 +111,7 @@ li {
   height: 560px;
   background-color: #ffffff;
   border-radius: 176px 176px 0 0;
-  border: 8px solid var(--gold-color);
+  border: 12px solid var(--gold-color);
   box-sizing: border-box;
   overflow: hidden;
 
@@ -125,9 +147,23 @@ li {
   font-weight: 600;
   font-size: 16px;
 }
-
+.about-background-container {
+  width: 100%;
+  height: auto;
+  background-color: #FFF6E9;
+  display: flex;
+  flex-direction: column;
+}
+.about-container {
+  width: 100%;
+  height: 560px;
+  background-color: var(--gold-color);
+  box-sizing: border-box;
+  overflow: hidden;
+}
 footer {
-  background-color: #7a7a7a;
+  background-color: #FFF6E9;
   height: 150px;
 }
+
 </style>
