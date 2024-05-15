@@ -16,31 +16,41 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <body>
     <RouterView />
-    
+
     <div class="portals-container">
       <div class="day-portal-container">
         <div class="portal-box"></div>
-        <button class="primary-button"><p>Buy Ticket</p></button>
+        <button class="primary-button">
+          <p>Buy Ticket</p>
+        </button>
       </div>
 
       <div class="portal-box"></div>
     </div>
-    <div class="google-maps-box">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d584.793362608357!2d8.451821990246556!3d55.466236190699924!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b329048d3%3A0xdf9c6be4b900162c!2sChristian%20IX%20statue%2C%20Esbjerg!5e1!3m2!1spl!2sdk!4v1715781193207!5m2!1spl!2sdk"
-        width="720" height="336" style="border:0;" allowfullscreen="" loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+
 
     <div class="about-background-container">
-    <div class="torn-paper-top"></div>
-
-
-
+      <div class="gold-torn-paper-top"></div>
       <div class="about-container"></div>
-      <div class="torn-paper-bottom"></div>
+      <div class="gold-torn-paper-bottom"></div>
     </div>
 
+    <div class="discover-container">
+      <div class="discover-boxes-container">
+        <div class="discover-box"><div class="discover-box-top"></div></div>
+        <div class="discover-box"><div class="discover-box-top"></div></div>
+        <div class="discover-box"><div class="discover-box-top"></div></div>
+        <div class="discover-box"><div class="discover-box-top"></div></div>
+      </div>
+    </div>
+
+
+
+    <div class="quests-background-container">
+      <div class="grey-torn-paper-top"></div>
+      <div class="quests-container"></div>
+      <div class="grey-torn-paper-bottom"></div>
+    </div>
   </body>
 
 
@@ -72,20 +82,39 @@ li {
   margin: 10px;
 
 }
-.torn-paper-top {
+
+.gold-torn-paper-top {
   display: flex;
   height: 120px;
   width: 100%;
-  background: url('../src/assets/img/torn-paper-top-svg.svg') no-repeat;
+  background: url('../src/assets/img/gold-torn-paper-top-svg.svg') no-repeat;
   background-size: cover;
 }
-.torn-paper-bottom {
+
+.gold-torn-paper-bottom {
   display: flex;
   height: 144px;
   width: 100%;
-  background: url('../src/assets/img/torn-paper-bottom-svg.svg') no-repeat;
+  background: url('../src/assets/img/gold-torn-paper-bottom-svg.svg') no-repeat;
   background-size: cover;
 }
+
+.grey-torn-paper-top {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/grey-torn-paper-top-svg.svg') no-repeat;
+  background-size: cover;
+}
+
+.grey-torn-paper-bottom {
+  display: flex;
+  height: 144px;
+  width: 100%;
+  background: url('../src/assets/img/grey-torn-paper-bottom-svg.svg') no-repeat;
+  background-size: cover;
+}
+
 .logo {
   background-color: #7a7a7a;
   width: 30px;
@@ -99,6 +128,7 @@ li {
   margin: 10px;
 
 }
+
 .day-portal-container {
   display: flex;
   flex-direction: column;
@@ -117,15 +147,6 @@ li {
 
 }
 
-.google-maps-box {
-  position: relative;
-  width: 736px;
-  height: 352px;
-  border: 8px solid var(--gold-color);
-  box-sizing: border-box;
-  overflow: hidden;
-
-}
 
 .primary-button {
   background-color: var(--gold-color);
@@ -134,6 +155,7 @@ li {
   border-radius: 64px;
   border: none;
   margin-top: 24px;
+
   p {
     color: #ffffff;
     font-size: 16px;
@@ -147,6 +169,7 @@ li {
   font-weight: 600;
   font-size: 16px;
 }
+
 .about-background-container {
   width: 100%;
   height: auto;
@@ -154,6 +177,7 @@ li {
   display: flex;
   flex-direction: column;
 }
+
 .about-container {
   width: 100%;
   height: 560px;
@@ -161,9 +185,43 @@ li {
   box-sizing: border-box;
   overflow: hidden;
 }
+.discover-container {
+  width: 100%;
+  height: auto;
+  /* background-color: var(--grey-color); */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.discover-boxes-container {
+  display: flex;
+  justify-content: space-evenly;
+  height: auto;
+  margin: 128px 0;
+}
+.discover-box {
+  width: 256px;
+  height: 384px;
+  background-color: #FFF6E9;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 0px 4px 32px -8px #3b3526;
+}
+.discover-box-top {
+  width: 256px;
+  height: 256px;
+  background-color: var(--grey-color);
+
+}
+.quests-container {
+  width: 100%;
+  height: 560px;
+  background-color: var(--grey-color);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 footer {
   background-color: #FFF6E9;
   height: 150px;
 }
-
 </style>
