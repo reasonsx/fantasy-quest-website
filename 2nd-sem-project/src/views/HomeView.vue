@@ -28,13 +28,21 @@ import Portals from '../assets/components/Portals.vue';
     </div>
         
 
-
-        <div class="about-background-container">
+<div class="about-background-container">
+    <div class="grey-torn-paper-top"></div>
+    <div class="about-container">
+        <div class="about-box"></div>
+        <h2>About</h2>
+        <p>Embark on a magical journey at Fantasy Quest Esbjerg, part of the enchanting Fantasy Festival. Choose from two uniquely themed quests—Day Quest for families and Evening Quest for those seeking adventure under the stars. Each quest is infused with challenges and a rich narrative designed to test your bravery and wit. Join us for a day of mythical creatures, epic challenges, and heroic deeds. Whether with family or friends, come craft your story and become the hero Esbjerg needs. Register now and transform your world at Fantasy Quest Esbjerg!</p>
+    </div>
+</div>
+        <div class="characters-background-container">
             <div class="gold-torn-paper-top"></div>
-            <div class="about-container"></div>
-            <div class="gold-torn-paper-bottom"></div>
+            <div class="characters-container"></div>
+            <!-- <div class="gold-torn-paper-bottom"></div> -->
         </div>
-
+<div class="discover-background-container">
+    <div class="light-torn-paper-top"></div>
         <div class="discover-container">
             <h2>Discover</h2>
             <div class="discover-boxes-container">
@@ -52,6 +60,7 @@ import Portals from '../assets/components/Portals.vue';
                 </div>
             </div>
         </div>
+    </div>
 
 
 
@@ -134,7 +143,6 @@ import Portals from '../assets/components/Portals.vue';
     font-weight: 600;
     font-size: 16px;
 }
-
 .about-background-container {
     width: 100%;
     height: auto;
@@ -142,10 +150,47 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     flex-direction: column;
 }
-
 .about-container {
     width: 100%;
+    height: auto;
+    background-color: var(--grey-color);
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 64px 0;
+}
+.about-container h2 {
+    color: #FFF6E9;
+    margin: 24px 0;
+    text-align: left;
+    width: 1120px;
+}
+.about-container p {
+    color: #FFF6E9;
+    font-size: 24px;
+    text-align: left;
+    width: 1120px;
+}
+.about-box {
+    width: 1120px;
     height: 560px;
+    background-color: #FFF6E9;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.characters-background-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--grey-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.characters-container {
+    width: 100%;
+    height: 256px;
     background-color: var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
