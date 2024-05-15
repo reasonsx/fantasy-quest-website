@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300..900&display=swap');
+@import url("https://use.typekit.net/hnh0enw.css");
+
+:root {
+    --gold-color: #A3883C;
+    --black-color: #1f1f1f;
+    --white-color: #f1f1f1;
+    --primary-font: 'Exocet', sans-serif;
+    --secondary-font: 'Darker Grotesque', sans-serif;
+}
