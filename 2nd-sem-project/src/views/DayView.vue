@@ -3,6 +3,7 @@
     <div class="hero">
         <h1>Day Quest</h1>
     </div>
+    <div class="day-quest-torn-paper-top"></div>
     <!-- First Container -->
     <div class="first-container">
         <img src="../assets/img/sun-svg.svg" class="sun-section" alt="Sun">
@@ -62,14 +63,21 @@
 
 <style>
 
+.day-quest-torn-paper-top{
+    display: flex;
+    margin-top: -50px;
+    z-index: 1;
+}
 
 .hero {
+    display: flex;
+    justify-content: center;
+    align-items:first baseline;
     position: relative;
-    height: 550px;
+    height: 650px;
     background-image: url('../assets/img/Fantasy1.jpg');
     background-size: cover;
     background-position: 0px -80px;
-    
 }
 
 h1 {
@@ -78,6 +86,7 @@ h1 {
     text-align: center;
     margin-top: 30px;
     color: #FFF6E9;
+
 }
 
 .first-container {

@@ -111,6 +111,15 @@ button:hover {
   background-size: cover;
 }
 
+.day-quest-torn-paper-top{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: url('../src/assets/img/day-paper.svg') no-repeat;
+  background-size: cover;
+}
+
+
 .logo {
   background-color: #7a7a7a;
   width: 30px;
