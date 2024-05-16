@@ -95,6 +95,21 @@ button:hover {
   background: url('../src/assets/img/light-torn-paper-top-svg.svg') no-repeat;
   background-size: cover;
 }
+.purple-torn-paper-top { 
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/purple-torn-paper-top-svg.svg') no-repeat;
+  background-size: cover;
+}
+.purple-torn-paper-bottom { 
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/purple-torn-paper-bottom-svg.svg') no-repeat;
+  background-size: cover;
+}
+
 .logo {
   background-color: #7a7a7a;
   width: 30px;

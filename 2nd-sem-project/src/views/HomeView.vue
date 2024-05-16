@@ -61,7 +61,8 @@ import Portals from '../assets/components/Portals.vue';
             </div>
         </div>
     </div>
-
+<div class="purple-torn-paper-top"></div>
+<div class="purple-torn-paper-bottom"></div>
 
 
         <div class="quests-background-container">
@@ -138,7 +139,9 @@ import Portals from '../assets/components/Portals.vue';
 .accordion{
     /* margin: 128px 0; */
     width: 1120px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
     overflow: hidden;
     background-color: var(--black-color);
     /* border: 4px solid var(--light-papirus); */
@@ -332,13 +335,14 @@ import Portals from '../assets/components/Portals.vue';
     background-color: var(--light-papirus);
     box-sizing: border-box;
     overflow: hidden;
-    box-shadow: 0px 4px 32px -8px #3b3526;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .discover-box-top {
     width: 256px;
     height: 256px;
     background-color: var(--black-color);
+    
 }
 .discover-box-top img {
     width: 256px;
@@ -384,6 +388,7 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     background-color: var(--light-papirus);
+    
 }
 .quest-box img {
     width: 544px;
