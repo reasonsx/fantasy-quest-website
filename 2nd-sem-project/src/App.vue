@@ -52,6 +52,10 @@ li {
   margin: 10px;
 
 }
+button:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+}
 
 .gold-torn-paper-top {
   display: flex;

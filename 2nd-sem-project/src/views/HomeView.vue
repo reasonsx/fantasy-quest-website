@@ -76,38 +76,39 @@ import Portals from '../assets/components/Portals.vue';
         </div>
     </body>
     <div class="accordion-container">
+        <h2>FAQ</h2>
     <div class="accordion">
         <div class="faq">
             <input type="checkbox" id="section-1" class="accordion-input">
-            <label for="section-1" class="accordion-label">Question #1</label>
+            <label for="section-1" class="accordion-label"><p>Question #1</p></label>
             <div class="accordion-content">
                 <p>Content #1</p>
             </div>
         </div>
         <div class="faq">
             <input type="checkbox" id="section-2" class="accordion-input">
-            <label for="section-2" class="accordion-label">Question #2</label>
+            <label for="section-2" class="accordion-label"><p>Question #2</p></label>
             <div class="accordion-content">
                 <p>Content #2</p>
             </div>
         </div>
         <div class="faq">
             <input type="checkbox" id="section-3" class="accordion-input">
-            <label for="section-3" class="accordion-label">Question #3</label>
+            <label for="section-3" class="accordion-label"><p>Question #3</p></label>
             <div class="accordion-content">
                 <p>Content #3</p>
             </div>
         </div>
         <div class="faq">
             <input type="checkbox" id="section-4" class="accordion-input">
-            <label for="section-4" class="accordion-label">Question #4</label>
+            <label for="section-4" class="accordion-label"><p>Question #4</p></label>
             <div class="accordion-content">
                 <p>Content #4</p>
             </div>
         </div>
         <div class="faq">
             <input type="checkbox" id="section-5" class="accordion-input">
-            <label for="section-5" class="accordion-label">Question #5</label>
+            <label for="section-5" class="accordion-label"><p>Question #5</p></label>
             <div class="accordion-content">
                 <p>Content #5</p>
             </div>
@@ -127,10 +128,15 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    margin: 0 0 64px 0;
+}
+.accordion-container h2 {
+    color: var(--gold-color);
+    margin: 64px 0;
+    text-align: center;
 }
 .accordion{
-    margin: 128px 0;
+    /* margin: 128px 0; */
     width: 1120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
