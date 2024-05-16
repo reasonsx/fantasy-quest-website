@@ -33,7 +33,7 @@ body {
 }
 h2 {
     font-family: var(--primary-font);
-    font-size: 56px;
+    font-size: 48px;
     color: var(--gold-color);
 }
 p {

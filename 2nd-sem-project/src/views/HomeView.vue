@@ -50,10 +50,10 @@ import Portals from '../assets/components/Portals.vue';
                     <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
                 </div>
                 <div class="discover-box">
-                    <div class="discover-box-top"></div>
+                    <div class="discover-box-top"><img src="../assets/img/professional-actors.jpg" alt=""></div>
                 </div>
                 <div class="discover-box">
-                    <div class="discover-box-top"></div>
+                    <div class="discover-box-top"><img src="../assets/img/realtime-music.jpg" alt=""></div>
                 </div>
                 <div class="discover-box">
                     <div class="discover-box-top"></div>
@@ -67,10 +67,10 @@ import Portals from '../assets/components/Portals.vue';
         <div class="quests-background-container">
             <div class="grey-torn-paper-top"></div>
             <div class="quests-container">
-                <div class="quest-container"><div class="quest-box"></div><h2>Day Quest</h2><p>Experience an enchanting family adventure at the Day Quest during Fantasy Quest Esbjerg. Solve puzzles, conquer challenges, and become the heroes of Esbjerg in a fantasy world brought to life. Suitable for all ages, this immersive experience promises a day of magical fun and teamwork amidst the bustling Fantasy Festival.
+                <div class="quest-container"><div class="quest-box"><img src="../assets/img/day-quest-main-page.jpg" alt=""></div><h2>Day Quest</h2><p>Experience an enchanting family adventure at the Day Quest during Fantasy Quest Esbjerg. Solve puzzles, conquer challenges, and become the heroes of Esbjerg in a fantasy world brought to life. Suitable for all ages, this immersive experience promises a day of magical fun and teamwork amidst the bustling Fantasy Festival.
             </p>
         </div>
-                <div class="quest-container"><div class="quest-box"></div><h2>Evening Quest</h2><p>Step into the shadows and become the hero of a thrilling adventure during the Evening Quest at Fantasy Quest Esbjerg. Confront darkness, solve challenges, and save Esbjerg from evil forces as twilight descends. Join alone or with friends for an unforgettable journey under the stars.</p></div>
+                <div class="quest-container"><div class="quest-box"><img src="../assets/img/night-quest-main-page.jpg" alt=""></div><h2>Evening Quest</h2><p>Step into the shadows and become the hero of a thrilling adventure during the Evening Quest at Fantasy Quest Esbjerg. Confront darkness, solve challenges, and save Esbjerg from evil forces as twilight descends. Join alone or with friends for an unforgettable journey under the stars.</p><div class="centered-button"><button class="primary-button">READ MORE</button></div></div>
             </div>
             <div class="grey-torn-paper-bottom"></div>
         </div>
@@ -131,7 +131,7 @@ import Portals from '../assets/components/Portals.vue';
 }
 .accordion{
     margin: 128px 0;
-    width: 736px;
+    width: 1120px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     background-color: var(--black-color);
@@ -213,7 +213,11 @@ import Portals from '../assets/components/Portals.vue';
           
 }
 
-
+.centered-button {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 24px; */
+}
 .primary-button {
     background-color: var(--gold-color);
     width: 180px;
@@ -221,20 +225,25 @@ import Portals from '../assets/components/Portals.vue';
     border-radius: 64px;
     border: none;
     margin-top: 24px;
+    /* color: var(--black-color); */
+    /* font-size: 16px; */
+    /* font-weight: 800; */
+    /* font-family: var(--secondary-font); */
 
     p {
         color: var(--light-papirus);
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 700;
+        font-family: var(--secondary-font);
 
     }
 }
 
-.button-text {
+/* .button-text {
     font-family: 'Dark Grotesque', sans-serif;
     font-weight: 600;
     font-size: 16px;
-}
+} */
 .about-background-container {
     width: 100%;
     height: auto;
@@ -354,6 +363,7 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+    
 }
 .quest-container h2 {
     color: var(--light-papirus);
@@ -368,5 +378,10 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     background-color: var(--light-papirus);
+}
+.quest-box img {
+    width: 544px;
+    height: 306px;
+    object-fit: cover;
 }
 </style>
