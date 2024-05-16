@@ -97,7 +97,7 @@ li {
   height: 30px;
 }
 footer {
-  background-color: #FFF6E9;
-  height: 150px;
+  background-color: var(--gold-color);
+  height: 96px;
 }
 </style>

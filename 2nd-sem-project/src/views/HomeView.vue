@@ -75,10 +75,102 @@ import Portals from '../assets/components/Portals.vue';
             <div class="grey-torn-paper-bottom"></div>
         </div>
     </body>
+    <div class="accordion-container">
+    <div class="accordion">
+        <div class="faq">
+            <input type="checkbox" id="section-1" class="accordion-input">
+            <label for="section-1" class="accordion-label">Question #1</label>
+            <div class="accordion-content">
+                <p>Content #1</p>
+            </div>
+        </div>
+        <div class="faq">
+            <input type="checkbox" id="section-2" class="accordion-input">
+            <label for="section-2" class="accordion-label">Question #2</label>
+            <div class="accordion-content">
+                <p>Content #2</p>
+            </div>
+        </div>
+        <div class="faq">
+            <input type="checkbox" id="section-3" class="accordion-input">
+            <label for="section-3" class="accordion-label">Question #3</label>
+            <div class="accordion-content">
+                <p>Content #3</p>
+            </div>
+        </div>
+        <div class="faq">
+            <input type="checkbox" id="section-4" class="accordion-input">
+            <label for="section-4" class="accordion-label">Question #4</label>
+            <div class="accordion-content">
+                <p>Content #4</p>
+            </div>
+        </div>
+        <div class="faq">
+            <input type="checkbox" id="section-5" class="accordion-input">
+            <label for="section-5" class="accordion-label">Question #5</label>
+            <div class="accordion-content">
+                <p>Content #5</p>
+            </div>
+        </div>
+    </div>
+</div>
 
+    <div class="gold-torn-paper-top"></div>
+    <!-- <footer></footer> -->
 </template>
 
 <style>
+.accordion-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-papirus);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.accordion{
+    margin: 128px 0;
+    width: 736px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    background-color: var(--black-color);
+    /* border: 4px solid var(--light-papirus); */
+}
+.accordion-label, .accordion-content{
+    padding: 14px 20px;
+}
+.accordion-label{
+    height: 64px;
+    display: block;
+    color: var(--light-papirus);
+    /* background-color: var(--light-papirus); */
+    /* border: 4px solid var(--gold-color); */
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+.accordion-label:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.accordion-content{
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+.accordion-input{
+    display: none;
+}
+.accordion-input:checked ~ .accordion-content{
+    display: block;
+}
+
+
+
+
+
 .portals-background-container {
     height: auto;
     display: flex;
