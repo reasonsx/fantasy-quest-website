@@ -47,7 +47,7 @@ import Portals from '../assets/components/Portals.vue';
             <h2>Discover</h2>
             <div class="discover-boxes-container">
                 <div class="discover-box">
-                    <div class="discover-box-top"></div>
+                    <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
                 </div>
                 <div class="discover-box">
                     <div class="discover-box-top"></div>
@@ -131,7 +131,7 @@ import Portals from '../assets/components/Portals.vue';
     margin-top: 24px;
 
     p {
-        color: #ffffff;
+        color: var(--light-papirus);
         font-size: 16px;
         font-weight: 600;
 
@@ -146,14 +146,14 @@ import Portals from '../assets/components/Portals.vue';
 .about-background-container {
     width: 100%;
     height: auto;
-    background-color: #FFF6E9;
+    background-color: var(--light-papirus);
     display: flex;
     flex-direction: column;
 }
 .about-container {
     width: 100%;
     height: auto;
-    background-color: var(--grey-color);
+    background-color: var(--black-color);
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
@@ -176,14 +176,14 @@ import Portals from '../assets/components/Portals.vue';
 .about-box {
     width: 1120px;
     height: 560px;
-    background-color: #FFF6E9;
+    background-color: var(--light-papirus);
     box-sizing: border-box;
     overflow: hidden;
 }
 .characters-background-container {
     width: 100%;
     height: auto;
-    background-color: var(--grey-color);
+    background-color: var(--black-color);
     display: flex;
     flex-direction: column;
 }
@@ -222,7 +222,7 @@ import Portals from '../assets/components/Portals.vue';
 .discover-box {
     width: 256px;
     height: 384px;
-    background-color: #FFF6E9;
+    background-color: var(--light-papirus);
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: 0px 4px 32px -8px #3b3526;
@@ -231,14 +231,18 @@ import Portals from '../assets/components/Portals.vue';
 .discover-box-top {
     width: 256px;
     height: 256px;
-    background-color: var(--grey-color);
-
+    background-color: var(--black-color);
+}
+.discover-box-top img {
+    width: 256px;
+    height: 256px;
+    object-fit: cover;
 }
 
 .quests-container {
     width: 100%;
     height: auto;
-    background-color: var(--grey-color);
+    background-color: var(--black-color);
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
@@ -260,18 +264,17 @@ import Portals from '../assets/components/Portals.vue';
     margin-bottom: 64px;
 }
 .quest-container h2 {
-    color: #FFF6E9;
+    color: var(--light-papirus);
     margin: 24px 0;
     text-align: left;
 }
 .quest-container p {
-    color: #FFF6E9;
+    color: var(--light-papirus);
     font-size: 24px;
-    /* text-align: center; */
 }
 .quest-box {
     width: 544px;
     height: 306px;
-    background-color: #FFF6E9;
+    background-color: var(--light-papirus);
 }
 </style>
