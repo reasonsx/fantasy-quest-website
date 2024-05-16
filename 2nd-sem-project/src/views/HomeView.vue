@@ -50,7 +50,7 @@ import Portals from '../assets/components/Portals.vue';
                     <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
                 </div>
                 <div class="discover-box">
-                    <div class="discover-box-top"><img src="../assets/img/professional-actors.jpg" alt=""></div>
+                    <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div>
                 </div>
                 <div class="discover-box">
                     <div class="discover-box-top"><img src="../assets/img/realtime-music.jpg" alt=""></div>
