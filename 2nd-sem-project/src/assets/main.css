@@ -3,11 +3,29 @@
 
 :root {
     --gold-color: #A3883C;
-    --black-color: #1f1f1f;
-    --white-color: #f1f1f1;
+    --black-color: #282A2E;
+    --light-papirus: #FFF6E9;
+    --dark-papirus: #DFCBAF;
     --primary-font: 'Exocet', sans-serif;
     --secondary-font: 'Darker Grotesque', sans-serif;
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--gold-color);
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--gold-color);
+    border-radius: 16px;
+    border: 3px solid var(--light-papirus);
+  }
 
 *{
     margin: 0;
