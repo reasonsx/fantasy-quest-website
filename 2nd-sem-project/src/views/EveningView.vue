@@ -6,7 +6,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         
             </div>
+            
         </div>
+        <div class="purple-torn-paper-top"></div>
         <div class="moon-container">
             <div class="moon-description">
             <div class="moon-svg">
@@ -21,6 +23,39 @@
                 <h1>Lorem ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                 <button class="button-silver"><p>Buy Ticket</p></button>
+            </div>
+        </div>
+        <div class="grey-torn-paper-top"></div>
+        <div class="schedule-container">
+            <div class="schedule-content">
+                <div class="schedule-text">
+                    <h1>Schedules</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="clock">
+                    <svg width="414" height="414" viewBox="0 0 414 414" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="207" cy="207" r="207" fill="#C0C0C0"/>
+                    </svg>
+
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="card-container">
+            <div class="grey-torn-paper-bottom"></div>
+            <div class="card-content">
+                <h1>Get to know our characters</h1>
+                <div class="card-grid">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
             </div>
         </div>
         </div>
@@ -89,6 +124,56 @@
         border-radius: 64px;
         border: none;
         margin-top: 24px;
+    }
+    .schedule-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--black-color);
+        color: var(--light-papirus);
+    }
+    .schedule-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 50px 0;
+    }
+    .schedule-text{
+        margin-right: 50px;
+    }
+    .card-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--silver-color);
+        h1{
+            color: var(--black-color);
+            margin-bottom: 50px;
+        }
+    }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 50px 0;
+    }
+    .card-grid{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 500px;
+        background-color: #5F2945;
     }
 
 </style>
