@@ -3,7 +3,7 @@
     <div class="hero">
         <h1>Day Quest</h1>
     </div>
-    <div class="day-quest-torn-paper-top"></div>
+    <div class="red-torn-paper-top"></div>
     <!-- First Container -->
     <div class="first-container">
         <img src="../assets/img/sun-svg.svg" class="sun-section" alt="Sun">
@@ -13,6 +13,7 @@
             <button class="btn">Buy Ticket</button>
         </div>
     </div>
+    <div class="red-torn-paper-bottom"></div>
 
     <!-- Second Container -->
     <div class="schedule-container">
@@ -63,11 +64,6 @@
 
 <style>
 
-.day-quest-torn-paper-top{
-    display: flex;
-    margin-top: -50px;
-    z-index: 1;
-}
 
 .hero {
     display: flex;
@@ -89,12 +85,18 @@ h1 {
 
 }
 
+.red-torn-paper-top{
+    display: flex;
+    margin-top: -50px;
+    z-index: 1;
+}
+
 .first-container {
+    background-color: #8F270D;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 .sun-section {
@@ -162,6 +164,12 @@ button:hover{
 button:hover:after {
   opacity: 1;
   right: 30px;
+}
+
+.red-torn-paper-bottom{
+    display: flex;
+    margin-top: -50px;
+    z-index: 1;
 }
 
 

@@ -111,14 +111,21 @@ button:hover {
   background-size: cover;
 }
 
-.day-quest-torn-paper-top{
+.red-torn-paper-top{
   display: flex;
   height: 80px;
   width: 100%;
-  background: url('../src/assets/img/day-paper.svg') no-repeat;
+  background: url('../src/assets/img/up-red-torn-paper.png') no-repeat;
   background-size: cover;
 }
 
+.red-torn-paper-bottom{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/bottom-red-torn-paper.svg') no-repeat;
+  background-size: cover;
+}
 
 .logo {
   background-color: #7a7a7a;
