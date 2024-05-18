@@ -74,6 +74,23 @@ button:hover {
   background-size: cover;
 }
 
+
+.beige-torn-paper-top {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/beige-up.svg') no-repeat;
+  background-size: cover;
+}
+
+.beige-torn-paper-bottom {
+  display: flex;
+  height: 144px;
+  width: 100%;
+  background: url('../src/assets/img/beige-bottom.svg') no-repeat;
+  background-size: cover;
+}
+
 .grey-torn-paper-top {
   display: flex;
   height: 120px;

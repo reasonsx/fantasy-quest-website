@@ -25,20 +25,30 @@
     </div>
         
     <!-- Third Container -->
-    <div class="character-container">
-        <div class="card">Card 1</div>
-        <div class="card">Card 2</div>
-        <div class="card">Card 3</div>
-        <div class="card">Card 4</div>
-        <div class="card">Card 5</div>
-    </div>
+    <div class="gold-torn-paper-top"></div>
+    <div class="card-content">
+        <div class="character-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+        </div>
+    </div>  
 
     <!-- Fourth Container -->
-    <div class="figure-container">
-        <div class="figure-text">"Brave enough to confront the night's horrors? <br> Embark on the Evening Quest."</div>
-        <img src="../assets/img/Malice.png" class="figure" alt="Figure">
-        <button class="btn">Take me there</button>
+    <div class="gold-torn-paper-bottom"></div>
+    <div class="fourth-section">
+        <div class="line-arrow">
+            <img src="../assets/img/arrow.svg" class="arrow" alt="Arrow">
+        </div>
+        <div class="figure-container">
+            <div class="figure-text">"Brave enough to confront the night's horrors? <br> Embark on the Evening Quest."</div>
+            <img src="../assets/img/Malice.png" class="figure" alt="Figure">
+            <button class="btn">Take me there</button>
+        </div>
     </div>
+    <div class="beige-torn-paper-bottom"></div>
 
     <!-- Fifth Container -->
     <div class="location-text">
@@ -55,6 +65,10 @@
     <div class="sixth-container">
         <button class="btn">Go back to home page</button>
     </div>
+    <div class="gold-torn-paper-top"></div>
+
+
+    
 
 </body>
            
@@ -100,13 +114,14 @@ h1 {
 }
 
 .sun-section {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-right: 150px;
     margin-left: 0px;
 }
 
 .text-section {
+    color: #FFF6E9;
     width: 500px;
     height: 400px;
     display: flex;
@@ -122,11 +137,12 @@ h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 40px;
     color: #FFD700;
+    margin-bottom: 10px;
 }
 
 button {
   border-radius: 30px;
-  background-color: #AE001A;
+  background-color: #A3883C;
   border: none;
   color: #FFF6E9;
   text-align: start;
@@ -202,7 +218,12 @@ button:hover:after {
 }
 
 /* Third Container */
+.card-content{
+background-color:#A3883C;
+}
+
 .character-container {
+    background-color: #A3883C;
     display: flex;
     flex-wrap: wrap; 
     gap: 10px; 
@@ -215,8 +236,8 @@ button:hover:after {
 
 .card {
     flex: 0 0 calc(30% - 10px); /* Flex-grow, Flex-shrink, Basis */
-    height: 400px; /* Can be adjusted based on your needs */
-    background-color: #AE001A;
+    height: 400px;
+    background-color: #8F270D;
     display: flex;
     justify-content: center; 
     align-items: center; 
@@ -225,7 +246,45 @@ button:hover:after {
 
 
 /* Fourth Container */  
+.fourth-section {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    background-color: #DFCBAF;
+    margin-top: -50px;
+}
+
+/* Arrow */
+.line-arrow{
+    margin-right: 0px;
+    margin-left: 150px;
+}
+
+.arrow{
+    margin-right: 500px;
+    margin-left: 180px;
+    margin-top: -100px;
+
+}
+
+.gold-torn-paper-bottom{
+    display: flex;
+    margin-top: -50px;
+    z-index: 1;
+}
+
+.beige-torn-paper-bottom{
+    margin-top: -70px;
+}
+
+.arrow{
+    margin-top: -100px;
+    margin-right: 0px;
+    margin-left: 150px;
+}
+
 .figure-container {
+    background-color: #DFCBAF;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -249,7 +308,7 @@ button:hover:after {
     border-radius: 15px;
     font-size: 20px;
     padding: 10px;
-    background-color: #AE001A;
+    background-color: #8F270D;
     width: 300px;
     margin-right: 350px;
     margin-left: 0px;
@@ -292,7 +351,7 @@ iframe{
 }
 
 
-/* Fourth Container */
+/* Sixth Container */
 .sixth-container {
     display: flex;
     justify-content: center;
