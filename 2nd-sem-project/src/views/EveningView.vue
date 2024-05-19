@@ -6,9 +6,9 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         
             </div>
-            
+            <div class="purple-torn-paper-top" style="position: absolute; bottom: 0;"></div>
         </div>
-        <div class="purple-torn-paper-top"></div>
+        
         <div class="moon-container">
             <div class="moon-description">
             <div class="moon-svg">
@@ -22,7 +22,7 @@
             <div class="moon-text">
                 <h1>Lorem ipsum</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <button class="button-silver"><p>Buy Ticket</p></button>
+                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
             </div>
         </div>
         <div class="grey-torn-paper-top"></div>
@@ -30,7 +30,17 @@
             <div class="schedule-content">
                 <div class="schedule-text">
                     <h1>Schedules</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Where: Torvet Esbjerg
+                        <br>
+                        When: September 14, 2024
+                        <br>
+                        Time: 18.00-22.30 (you can buy tickets and start your adventure every 5 minutes starting from 6 p.m. )
+                        <br>
+                        Duration: 1 hour 15 minutes
+                        <br>
+                        Price: 243.13 DKK per person
+                    </p>
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
                 </div>
                 <div class="clock">
                     <svg width="414" height="414" viewBox="0 0 414 414" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +88,9 @@
                     <RouterLink to="/day"><button class="button-purple"><p>Take me there!</p></button></RouterLink>
                 </div>
             </div>
+            <RouterLink to="/"><button class="button-purple"><p>Go back to home page</p></button></RouterLink>
             <div class="purple-torn-paper-top"></div>
+            different footer here
         </div>
     </div>
         
@@ -91,7 +103,7 @@
 
 <style scoped>
     .hero-container {
-        background-image: url('../assets/img/hero-evening.jpg');
+        background-image: url('../assets/img/hero_image-edited2.png');
         background-size: cover;
         background-position: center;
         height: 100vh;
@@ -99,6 +111,7 @@
         flex-direction: column;
         align-items: center;
         color: var(--light-papirus);
+        position: relative;
     }
     h1{
         font-family: var(--primary-font);
@@ -141,7 +154,8 @@
     }
     .button-silver {
         background-color: var(--silver-color);
-        width: 180px;
+        width: auto;
+        padding: 10px 40px;
         height: 48px;
         border-radius: 64px;
         border: none;
@@ -152,6 +166,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        width: 100%;
         background-color: var(--black-color);
         color: var(--light-papirus);
     }
@@ -217,7 +232,8 @@
     .button-purple {
         background-color: #5F2945;
         color: var(--light-papirus);
-        width: 180px;
+        width: auto;
+        padding: 10px 40px;
         height: 48px;
         border-radius: 64px;
         border: none;
