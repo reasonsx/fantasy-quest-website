@@ -122,59 +122,6 @@ import Portals from '../assets/components/Portals.vue';
 </template>
 
 <style>
-.accordion-container {
-    width: 100%;
-    height: auto;
-    background-color: var(--light-papirus);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0 64px 0;
-}
-.accordion-container h2 {
-    color: var(--gold-color);
-    margin: 64px 0;
-    text-align: center;
-}
-.accordion{
-    /* margin: 128px 0; */
-    width: 1120px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-
-    overflow: hidden;
-    background-color: var(--black-color);
-    /* border: 4px solid var(--light-papirus); */
-}
-.accordion-label, .accordion-content{
-    padding: 14px 20px;
-}
-.accordion-label{
-    height: 64px;
-    display: block;
-    color: var(--light-papirus);
-    /* background-color: var(--light-papirus); */
-    /* border: 4px solid var(--gold-color); */
-    font-weight: bold;
-    cursor: pointer;
-    position: relative;
-    transition: background-color 0.1s;
-}
-.accordion-label:hover{
-    background-color: rgba(0, 0, 0, 0.1);
-}
-.accordion-content{
-    background: white;
-    line-height: 1.6;
-    font-size: 0.85em;
-    display: none;
-}
-.accordion-input{
-    display: none;
-}
-.accordion-input:checked ~ .accordion-content{
-    display: block;
-}
 
 
 
@@ -194,6 +141,11 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     justify-content: space-evenly;
     padding: 0 10%;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        
+    }
 }
 .portals-container img {
     width: auto;
@@ -256,12 +208,13 @@ import Portals from '../assets/components/Portals.vue';
 .about-background-container {
     width: 100%;
     height: auto;
-    background-color: var(--light-papirus);
+    background-color: var(--black-color);
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .about-container {
-    width: 100%;
+    width: 1120px;
     height: auto;
     background-color: var(--black-color);
     box-sizing: border-box;
@@ -270,18 +223,26 @@ import Portals from '../assets/components/Portals.vue';
     flex-direction: column;
     align-items: center;
     padding: 64px 0 80px 0;
+    @media screen and (max-width: 768px){
+        width: 360px;
+    }
 }
 .about-container h2 {
     color: #FFF6E9;
     margin: 24px 0;
     text-align: left;
-    width: 1120px;
+    width: 100%;
+    
 }
 .about-container p {
     color: #FFF6E9;
     font-size: 24px;
     text-align: left;
     width: 1120px;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        
+    }
 }
 .about-box {
     width: 1120px;
@@ -289,6 +250,12 @@ import Portals from '../assets/components/Portals.vue';
     background-color: var(--light-papirus);
     box-sizing: border-box;
     overflow: hidden;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        height: 180px;
+
+        
+    }
 }
 .characters-background-container {
     width: 100%;
@@ -305,28 +272,44 @@ import Portals from '../assets/components/Portals.vue';
     box-sizing: border-box;
     overflow: hidden;
 }
+.discover-background-container {
+    width: 100%;
+    height: auto;
+    /* background-color: var(--black-color); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .discover-container {
-    width: 100%;
+    width: 1120px;
     height: auto;
     /* background-color: var(--grey-color); */
     box-sizing: border-box;
     overflow: hidden;
-    padding: 0 10%;
     margin: 32px 0 0 0;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        
+    }
 }
 .discover-container h2 {
     color: var(--gold-color);
     margin: 24px 0;
     text-align: center;
-    margin: 32px 0 64px 0;
 }
 
 .discover-boxes-container {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     height: auto;
     margin: 0 0 128px 0;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        
+    }
 }
 
 .discover-box {
@@ -349,19 +332,27 @@ import Portals from '../assets/components/Portals.vue';
     height: 256px;
     object-fit: cover;
 }
-
-.quests-container {
+.quests-background-container {
     width: 100%;
+    height: auto;
+    background-color: var(--black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.quests-container {
+    width: 1120px;
     height: auto;
     background-color: var(--black-color);
     box-sizing: border-box;
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 10%;
+    justify-content: space-between;
     @media screen and (max-width: 768px){
         flex-direction: column;
-        
+        align-items: center;
+        width: 360px;
     }
 }
 
@@ -373,12 +364,20 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     flex-direction: column;
     margin-bottom: 64px;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        
+    }
     
 }
 .quest-container h2 {
     color: var(--light-papirus);
     margin: 24px 0;
     text-align: left;
+    /* @media screen and (max-width: 768px){ */
+        /* margin: 16px 0; */
+        
+    /* } */
 }
 .quest-container p {
     color: var(--light-papirus);
@@ -388,11 +387,77 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     background-color: var(--light-papirus);
+    @media screen and (max-width: 768px){
+        width: 360px;
+        height: 180px;
+        
+    }
     
 }
 .quest-box img {
     width: 544px;
     height: 306px;
     object-fit: cover;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        height: 180px;
+        
+    }
+}
+.accordion-container {
+    width: 100%;
+    height: auto;
+    background-color: var(--light-papirus);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 0 64px 0;
+}
+.accordion-container h2 {
+    color: var(--gold-color);
+    margin: 64px 0;
+    text-align: center;
+}
+.accordion{
+    /* margin: 128px 0; */
+    width: 1120px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    background-color: var(--black-color);
+    /* border: 4px solid var(--light-papirus); */
+    @media screen and (max-width: 768px){
+        width: 360px;
+        
+    }
+}
+.accordion-label, .accordion-content{
+    padding: 14px 20px;
+}
+.accordion-label{
+    height: 64px;
+    display: block;
+    color: var(--light-papirus);
+    /* background-color: var(--light-papirus); */
+    /* border: 4px solid var(--gold-color); */
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: background-color 0.1s;
+}
+.accordion-label:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.accordion-content{
+    background: white;
+    line-height: 1.6;
+    font-size: 0.85em;
+    display: none;
+}
+.accordion-input{
+    display: none;
+}
+.accordion-input:checked ~ .accordion-content{
+    display: block;
 }
 </style>
