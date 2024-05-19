@@ -371,6 +371,7 @@ import Portals from '../assets/components/Portals.vue';
     width: 256px;
     height: 256px;
     object-fit: cover;
+    
 }
 
 .quests-background-container {
@@ -434,7 +435,6 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     background-color: var(--light-papirus);
-
     @media screen and (max-width: 768px) {
         width: 360px;
         height: 180px;
@@ -447,7 +447,6 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     object-fit: cover;
-
     @media screen and (max-width: 768px) {
         width: 360px;
         height: 180px;
