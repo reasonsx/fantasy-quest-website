@@ -1,6 +1,7 @@
 <script setup>
 import { RouterLink, RouterView } from 'vue-router'
 // import HelloWorld from './components/HelloWorld.vue'
+import DayView from './views/DayView.vue'
 </script>
 
 <template>
@@ -78,6 +79,23 @@ button:hover {
   background-size: cover;
 }
 
+
+.beige-torn-paper-top {
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/beige-up.svg') no-repeat;
+  background-size: cover;
+}
+
+.beige-torn-paper-bottom {
+  display: flex;
+  height: 144px;
+  width: 100%;
+  background: url('../src/assets/img/beige-bottom.svg') no-repeat;
+  background-size: cover;
+}
+
 .grey-torn-paper-top {
   display: flex;
   height: 120px;
@@ -112,6 +130,22 @@ button:hover {
   height: 120px;
   width: 100%;
   background: url('../src/assets/img/purple-torn-paper-bottom-svg.svg') no-repeat;
+  background-size: cover;
+}
+
+.red-torn-paper-top{
+  display: flex;
+  height: 80px;
+  width: 100%;
+  background: url('../src/assets/img/up-red-torn-paper.png') no-repeat;
+  background-size: cover;
+}
+
+.red-torn-paper-bottom{
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/bottom-red-torn-paper.svg') no-repeat;
   background-size: cover;
 }
 

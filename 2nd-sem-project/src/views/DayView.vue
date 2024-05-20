@@ -1,8 +1,77 @@
 <template>
-    <div>
-        <h1>Day</h1>
-        <p>Day view</p>
+<body>
+    <div class="hero">
+        <h1>Day Quest</h1>
     </div>
+    <div class="red-torn-paper-top"></div>
+    <!-- First Container -->
+    <div class="first-container">
+        <img src="../assets/img/sun-svg.svg" class="sun-section" alt="Sun">
+        <div class="text-section">
+            <h2>Day Quest</h2>
+            <p>Day Quest is a fun and interactive way to explore the city of Esbjerg. You will be given a map and a list of tasks to complete. The tasks will take you to different locations around the city, where you will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace, and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for all ages.</p>
+            <button class="btn">Buy Ticket</button>
+        </div>
+    </div>
+    <div class="red-torn-paper-bottom"></div>
+
+    <!-- Second Container -->
+    <div class="schedule-container">
+        <div class="schedule-text-section">
+            <h2>Schedule</h2>
+            <p>Day Quest is a self-guided tour of Esbjerg. You will be given a map and a list of tasks to complete. The tasks will take you to different locations around the city, where you will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace, and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for all ages.</p>
+        </div>
+        <img src="../assets/img/clock.svg" class="clock" alt="Clock">
+    </div>
+        
+    <!-- Third Container -->
+    <div class="gold-torn-paper-top"></div>
+    <div class="card-content">
+        <div class="character-container">
+            <div class="card">Card 1</div>
+            <div class="card">Card 2</div>
+            <div class="card">Card 3</div>
+            <div class="card">Card 4</div>
+            <div class="card">Card 5</div>
+        </div>
+    </div>  
+
+    <!-- Fourth Container -->
+    <div class="gold-torn-paper-bottom"></div>
+    <div class="fourth-section">
+        <div class="line-arrow">
+            <img src="../assets/img/arrow.svg" class="arrow" alt="Arrow">
+        </div>
+        <div class="figure-container">
+            <div class="figure-text">"Brave enough to confront the night's horrors? <br> Embark on the Evening Quest."</div>
+            <img src="../assets/img/Malice.png" class="figure" alt="Figure">
+            <button class="btn">Take me there</button>
+        </div>
+    </div>
+    <div class="beige-torn-paper-bottom"></div>
+
+    <!-- Fifth Container -->
+    <div class="location-text">
+        <h2>Starting point</h2>
+    </div>
+    <div class="location-container">
+        <div class="figure-section">
+            <img src="../assets/img/Malice.png" class="figure" alt="Figure">
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d565.441803217115!2d8.451494569653615!3d55.46672475856316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b3242d4fb%3A0x75e521797733a745!2sTorvet%2C%206700%20Esbjerg!5e0!3m2!1sro!2sdk!4v1715896013352!5m2!1sro!2sdk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Sixth Container -->
+    <div class="sixth-container">
+        <button class="btn">Go back to home page</button>
+    </div>
+    <div class="gold-torn-paper-top"></div>
+
+
+    
+
+</body>
+           
 </template>
 
 
