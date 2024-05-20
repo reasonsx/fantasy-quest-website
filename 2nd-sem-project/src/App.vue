@@ -149,6 +149,23 @@ button:hover {
   background-size: cover;
 }
 
+.silver-torn-paper-top { 
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/silver-torn-paper-top.svg') no-repeat;
+  background-size: cover;
+}
+.silver-torn-paper-bottom { 
+  display: flex;
+  height: 120px;
+  width: 100%;
+  background: url('../src/assets/img/silver-torn-paper-bottom.svg') no-repeat;
+  background-size: cover;
+}
+
+
+
 .logo {
   background-color: #7a7a7a;
   width: 30px;

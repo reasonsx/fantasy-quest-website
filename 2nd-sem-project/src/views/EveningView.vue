@@ -2,8 +2,8 @@
     <body>
         <div class="hero-container">
             <div class="hero-text">
-                <h1>EVENING QUEST</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <h1 style="text-align: center;">EVENING QUEST</h1>
+                <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         
             </div>
             <div class="purple-torn-paper-top" style="position: absolute; bottom: 0;"></div>
@@ -11,21 +11,17 @@
         
         <div class="moon-container">
             <div class="moon-description">
-            <div class="moon-svg">
-                <svg width="385" height="411" viewBox="0 0 385 411" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M361.118 321.08C320.359 338.057 274.526 338.148 233.701 321.333C192.875 304.517 160.402 272.173 143.425 231.415C126.447 190.656 126.356 144.823 143.171 103.998C159.987 63.1725 192.331 30.6991 233.09 13.7216C238.311 11.2246 245.802 8.50056 251.023 6.00356C210.116 -4.65195 166.8 -1.04891 128.216 16.2186C103.031 26.3246 80.1123 41.3467 60.7973 60.4077C41.4824 79.4686 26.1583 102.187 15.7198 127.235C5.28125 152.284 -0.0624871 179.161 0.000551292 206.297C0.0635897 233.433 5.53214 260.285 16.0869 285.285C26.6417 310.285 42.0712 332.931 61.4745 351.902C80.8778 370.874 103.866 385.789 129.097 395.778C154.328 405.767 181.297 410.629 208.428 410.081C235.559 409.533 262.309 403.585 287.116 392.585C328.811 375.874 363.289 345.013 384.499 305.417C377.344 311.534 369.497 316.791 361.118 321.08Z" fill="#C0C0C0"/>
-                </svg>
-
-
-
-            </div>
-            <div class="moon-text">
-                <h1>Lorem ipsum</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
+                <div class="moon-svg">
+                    <img src="../assets/img/moon.svg" alt="Moon">
+                </div>
+                <div class="moon-text">
+                    <h1>Lorem ipsum</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
+                </div>
             </div>
         </div>
-        <div class="grey-torn-paper-top"></div>
+        <div class="grey-torn-paper-top" style="background-color: var(--purple-color);"></div>
         <div class="schedule-container">
             <div class="schedule-content">
                 <div class="schedule-text">
@@ -62,9 +58,6 @@
                     <div class="card"></div>
                     <div class="card"></div>
                     <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
                 </div>
             </div>
         </div>
@@ -88,11 +81,25 @@
                     <RouterLink to="/day"><button class="button-purple"><p>Take me there!</p></button></RouterLink>
                 </div>
             </div>
-            <RouterLink to="/"><button class="button-purple"><p>Go back to home page</p></button></RouterLink>
-            <div class="purple-torn-paper-top"></div>
-            different footer here
+            
+            <div class="silver-torn-paper-top"></div>
+            <div class="map-container">
+                <div class="map-content">
+                    <h1>Starting point</h1>
+                    <div class="map-section">
+                        
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d565.441803217115!2d8.451494569653615!3d55.46672475856316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x464b212b3242d4fb%3A0x75e521797733a745!2sTorvet%2C%206700%20Esbjerg!5e0!3m2!1sro!2sdk!4v1715896013352!5m2!1sro!2sdk"   loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <img src="../assets/img/Malice.png" class="figure" alt="Figure">
+                    </div>
+                    <RouterLink to="/"><button class="button-purple"><p>Go back to home page</p></button></RouterLink>
+                </div>
+                <div class="purple-torn-paper-top"></div>
+                purple footer here
+            </div>
         </div>
-    </div>
+    
+    
+    
         
     </body>
 </template>
@@ -137,7 +144,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        background-color: #5F2945;
+        background-color: var(--purple-color);
         color: var(--light-papirus);
     }
     .moon-description{
@@ -203,13 +210,13 @@
     }
     .card-grid{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(5, 1fr);
         gap: 50px;
         width: 100%;
     }
     .card{
         width: 100%;
-        height: 500px;
+        height: 400px;
         background-color: #5F2945;
     }
     .figure-container{
@@ -250,6 +257,105 @@
         padding: 20px;
         margin-right: 40px;
         margin-bottom: 200px;
+
+    }
+    .map-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: var(--silver-color);
+        color: var(--light-papirus);
+    }
+    .map-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+    .map-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    iframe{
+        width: 60%;
+        height: 500px;
+        margin-right: 50px;
+        border: 10px solid var(--purple-color);
+    }
+    @media (max-width: 700px){
+        h1{
+            font-size: 48px;
+        }
+        p{
+            font-size: 16px;
+        }
+        .moon-container{
+            flex-direction: column;
+            
+        }
+        .moon-description{
+            flex-direction: column;
+            margin: 0 0 50px 0;
+        }
+        .moon-svg{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        .schedule-container{
+            flex-direction: column;
+        }
+        .schedule-content{
+            flex-direction: column;
+            margin: 0 ;
+        }
+        .schedule-text{
+            margin-right: 0;
+        }
+        .card-container{
+            flex-direction: column;
+        }
+        .card-content{
+            flex-direction: column;
+            margin:  60px 0;
+        }
+        .card-grid{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .nothing-here{
+            display: none;
+        }
+        .figure-content{
+            margin: 0 0 60px 0;
+        }
+        .question-part{
+            width: 50%;
+        }
+        .figure-part{
+            width: 50%;
+        }
+        .map-container{
+            flex-direction: column;
+            
+        }
+        .map-content{
+            margin-bottom: 60px;
+        }
+        .map-section{
+            flex-direction: column;
+            
+        }
+        iframe{
+            width: 100%;
+            margin-right: 0;
+        }
+
 
     }
 
