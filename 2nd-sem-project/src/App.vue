@@ -36,6 +36,11 @@ h2 {
     font-size: 48px;
     color: var(--gold-color);
 }
+h3 {
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color: var(--gold-color);
+}
 p {
   font-family: var(--secondary-font);
   font-size: 24px;

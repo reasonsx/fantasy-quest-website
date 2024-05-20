@@ -54,7 +54,7 @@ import Portals from '../assets/components/Portals.vue';
                 <h2>Discover</h2>
                 <div class="discover-boxes-container">
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
+                        <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div><h3>Lakserytteren</h3>
                     </div>
                     <div class="discover-box">
                         <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div>
@@ -358,6 +358,11 @@ import Portals from '../assets/components/Portals.vue';
     box-sizing: border-box;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.discover-box h3 {
+    color: var(--gold-color);
+    margin: 24px 0;
+    text-align: center;
 }
 
 .discover-box-top {
