@@ -19,9 +19,15 @@
     <div class="schedule-container">
         <div class="schedule-text-section">
             <h2>Schedule</h2>
-            <p>Day Quest is a self-guided tour of Esbjerg. You will be given a map and a list of tasks to complete. The tasks will take you to different locations around the city, where you will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace, and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for all ages.</p>
+            <p>Embark on the Day Quest and explore a fantastical world filled with intrigue and mystery. Begin your adventure at 10:00 AM and overcome thrilling challenges. The quest concludes at 2:30 PM, leaving you with awe-inspiring memories to cherish. 
+                <br><strong>Date:</strong> 14 September 2024 
+                <br><strong>Location:</strong> Torvet 6700 Esbjerg
+                <br><strong>Time:</strong> 10:00 AM - 2:30 PM
+                <br><strong>Price:</strong> 243.13 DKK
+            </p>
+            <button class="btn">Buy Ticket</button>
         </div>
-        <img src="../assets/img/clock.svg" class="clock" alt="Clock">
+        <img src="../assets/img/Day-clock.png" class="clock" alt="Clock">
     </div>
         
     <!-- Third Container -->
@@ -88,36 +94,61 @@
     background-image: url('../assets/img/Fantasy1.jpg');
     background-size: cover;
     background-position: 0px -80px;
+
+    @media (max-width: 768px) {
+        height: 400px;
+        background-position: center; 
+        align-items: start;
+        justify-content: center;
+    }
 }
 
 h1 {
     font-family: 'Exocet', sans-serif;
-    font-size: 40px;
+    font-size: 70px;
     text-align: center;
     margin-top: 30px;
     color: #FFF6E9;
 
+    @media (max-width: 768px) {
+        font-size: 40px;
+        text-align: start;
+    }
 }
 
 .red-torn-paper-top{
     display: flex;
-    margin-top: -50px;
+    margin-top: -40px;
     z-index: 1;
 }
 
 .first-container {
     background-color: #8F270D;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+
+    @media screen and (max-width: 768px){
+        margin-top: -40px;
+        margin-bottom: 0px;
+        z-index: 1;
+    }
 }
 
 .sun-section {
     width: 400px;
     height: 400px;
     margin-right: 150px;
-    margin-left: 0px;
+    margin-left: 0px;  
+
+    @media screen and (max-width: 768px){
+        width: 50%; 
+        margin-right: 0; 
+        margin-left: 0;
+        height: auto; 
+    }
 }
 
 .text-section {
@@ -131,13 +162,44 @@ h1 {
     justify-content: center;
     margin-right: 0px;
     margin-left: 150px;
+    font-size: 50px;
+
+    @media screen and (max-width: 768px){
+    width: 100%; 
+    margin-right: 10px; 
+    margin-left: 10px;
+    height: auto; 
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
 }
 
 h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 40px;
-    color: #FFD700;
+    color: #A3883C;
     margin-bottom: 10px;
+
+}
+
+p{
+    font-family: Darker Grotesque;
+    font-size: 22px;
+    color: #FFF6E9;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 768px){
+        width: 100%; 
+        height: auto; 
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
 }
 
 button {
@@ -154,6 +216,14 @@ button {
   transition: all 0.5s;
   cursor: pointer;
   margin-top: 36px;
+  
+
+    @media screen and (max-width: 768px){
+    width: 170px; 
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    }
 }
 
 button{
@@ -196,6 +266,13 @@ button:hover:after {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column-reverse;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        align-items: stretch;
+    }
 }
 
 .schedule-text-section {
@@ -208,13 +285,46 @@ button:hover:after {
     justify-content: center;
     margin-right: 150px;
     margin-left: 0px;
+
+    @media screen and (max-width: 768px){
+    width: 100%; 
+    margin-right: 10px; 
+    margin-left: 10px;
+    height: auto; 
+    font-size: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    }
+}
+
+.schedule-text-section p {
+    font-size: 22px;
+    color: #A3883C;
+    margin-bottom: 10px;
+
+    @media screen and (max-width: 768px){
+        width: 100%; 
+        height: auto; 
+        font-size: 15px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }
 
 .clock {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
     margin-right: 0px;
     margin-left: 150px;
+
+    @media screen and (max-width: 768px){
+        width: 60%; 
+        margin:20px auto;
+        height: auto
+    }
 }
 
 /* Third Container */
@@ -225,23 +335,39 @@ background-color:#A3883C;
 .character-container {
     background-color: #A3883C;
     display: flex;
-    flex-wrap: wrap; 
-    gap: 10px; 
+    flex-wrap: nowrap; 
+    gap: 10px;
     padding: 10px;
     justify-content: center;
     align-items: center;
     margin-right: 180px;
     margin-left: 180px;
+    overflow-x: auto; 
+    
+    @media screen and (max-width: 768px){
+        flex-wrap: wrap; 
+        margin-right: 10px; 
+        margin-left: 10px;
+        overflow-x: visible; 
+        justify-content: center;
+    }
 }
 
 .card {
-    flex: 0 0 calc(30% - 10px); /* Flex-grow, Flex-shrink, Basis */
+    flex: 0 0 calc(16.66% - 10px); 
     height: 400px;
     background-color: #8F270D;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     margin: 10px;
+
+    @media screen and (max-width: 768px){
+        flex: 0 0 100%; 
+        height: 200px; 
+        margin: 10px 0;
+        
+    }
 }
 
 
@@ -252,6 +378,7 @@ background-color:#A3883C;
     align-items: end;
     background-color: #DFCBAF;
     margin-top: -50px;
+
 }
 
 /* Arrow */
@@ -295,12 +422,6 @@ background-color:#A3883C;
     margin-left: 0px;
     
 }    
-.location-text{
-    margin-top: 30px;
-    margin-bottom: 20px;
-    margin-right: 0px;
-    margin-left: 200px;
-}
 
 .figure-text {
     font-family: Darker Grotesque;
@@ -316,10 +437,37 @@ background-color:#A3883C;
     z-index: 1;
 }
 
+/* Fifth Container */
+.location-text{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-left: 200px;
+
+    @media screen and (max-width: 768px){
+        font-size: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+}
+
 .figure{
     width: 300px;
     height: 400px;
     margin-right: 250px;
+
+    @media screen and (max-width: 768px){
+        margin-left: 20px;
+        margin-right: 20px;
+        width: 150px;
+        height: 200px;
+    }
 }
 
 .figure-container .btn{
@@ -327,6 +475,13 @@ background-color:#A3883C;
     margin-right: 150px;
     margin-left: 0px;
     width: 250px;
+
+    @media screen and (max-width: 768px){
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        margin-top: 10px;
+    }
 }
 
 .location-container {
@@ -335,12 +490,25 @@ background-color:#A3883C;
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
+
+    @media screen and (max-width: 768px){
+        flex-direction: column; /* Stack elements vertically in a single column */
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
 .figure-section{
     width: 300px;
     height: 300px;
     margin-top: -70px;
+
+    @media screen and (max-width: 768px){
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        height: auto;
+    }
 }
 
 iframe{
@@ -348,7 +516,16 @@ iframe{
     height: 400px;
     margin-right: 0px;
     margin-left: 150px;
+
+    @media screen and (max-width: 768px){
+        margin-left: 20px;
+        margin-right: 20px;
+        width: auto;
+        height: 300px;
+    }
 }
+
+
 
 
 /* Sixth Container */
@@ -365,11 +542,7 @@ iframe{
 }
 
 
-@media (max-width: 600px) {
-  .card {
-    flex: 0 0 calc(50% - 10px); /* Adjust for smaller screens */
-  }
-}
+
 
 
 </style>
