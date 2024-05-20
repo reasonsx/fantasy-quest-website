@@ -204,6 +204,7 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     justify-content: center;
     /* margin-top: 24px; */
+    
 }
 
 .primary-button {
@@ -217,12 +218,16 @@ import Portals from '../assets/components/Portals.vue';
     /* font-size: 16px; */
     /* font-weight: 800; */
     /* font-family: var(--secondary-font); */
+    letter-spacing: 2px;
+    font-weight: 500;
+    /* font-size: 16px; */
 
     p {
         color: var(--light-papirus);
         font-size: 16px;
         font-weight: 700;
         font-family: var(--secondary-font);
+        letter-spacing: 1px;
 
     }
 }
