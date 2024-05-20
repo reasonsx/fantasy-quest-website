@@ -222,14 +222,14 @@ footer {
     }
 
 }
-.bottom-footer svg:hover {
+/* .bottom-footer svg:hover {
     scale: 1.4;
     transition: 0.3s;
 }
 .bottom-footer :not(:hover) {
     scale: 1;
     transition: 0.3s;
-}
+} */
 
 footer p {
     color: var(--light-papirus);
@@ -281,7 +281,6 @@ footer p {
 }
 
 .footer-box:nth-child(4) p {
-    /* cursor: pointer; */
     text-decoration: underline;
 }
 
@@ -386,7 +385,10 @@ footer p {
 
     }
 }
-
+.primary-button:hover {
+    scale: 1.1;
+    
+}
 
 /* .button-text {
     font-family: 'Dark Grotesque', sans-serif;
