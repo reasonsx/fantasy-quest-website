@@ -14,7 +14,7 @@ import Portals from '../assets/components/Portals.vue';
 
     <body>
         <div class="portals-background-container">
-            <h2>CHOOSE YOUR SIDE</h2>
+            <h2>CHOOSE YOUR ADVENTURE</h2>
             <div class="portals-container">
                 <div class="day-portal-container">
                     <div class="portal-box"></div>
