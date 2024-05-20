@@ -23,7 +23,7 @@ import DayView from './views/DayView.vue'
 
 
 
-  <footer></footer>
+  <!-- <footer></footer> -->
 </template>
 
 <style>
