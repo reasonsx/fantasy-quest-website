@@ -222,6 +222,14 @@ footer {
     }
 
 }
+.bottom-footer svg:hover {
+    scale: 1.4;
+    transition: 0.3s;
+}
+.bottom-footer :not(:hover) {
+    scale: 1;
+    transition: 0.3s;
+}
 
 footer p {
     color: var(--light-papirus);
@@ -273,7 +281,7 @@ footer p {
 }
 
 .footer-box:nth-child(4) p {
-    cursor: pointer;
+    /* cursor: pointer; */
     text-decoration: underline;
 }
 
@@ -378,6 +386,7 @@ footer p {
 
     }
 }
+
 
 /* .button-text {
     font-family: 'Dark Grotesque', sans-serif;
