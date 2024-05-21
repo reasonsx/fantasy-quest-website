@@ -288,7 +288,7 @@
         margin-right: 50px;
         border: 10px solid var(--purple-color);
     }
-    @media (max-width: 700px){
+    @media screen and (max-width: 768px){
         h1{
             font-size: 48px;
         }
@@ -297,16 +297,24 @@
         }
         .moon-container{
             flex-direction: column;
+
             
         }
         .moon-description{
             flex-direction: column;
             margin: 0 0 50px 0;
+            width: 360px;
+        }
+        .moon-text{
+            margin-left: 0;
         }
         .moon-svg{
             display: flex;
             justify-content: center;
             margin-bottom: 50px;
+            img{
+                width: 360px;
+            }
         }
         .schedule-container{
             flex-direction: column;
@@ -314,9 +322,15 @@
         .schedule-content{
             flex-direction: column;
             margin: 0 ;
+            width: 360px;
         }
         .schedule-text{
             margin-right: 0;
+        }
+        .clock{
+            svg{
+                width: 360px;
+            }
         }
         .card-container{
             flex-direction: column;
@@ -324,15 +338,27 @@
         .card-content{
             flex-direction: column;
             margin:  60px 0;
+            width: 360px;
+        }
+        .card{
+            height: 250px;
         }
         .card-grid{
             grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
         }
         .nothing-here{
             display: none;
         }
         .figure-content{
             margin: 0 0 60px 0;
+            width: 360px;
+        }
+        .figure-svg{
+            svg{
+                width: 180PX;
+            
+            }
         }
         .question-part{
             width: 50%;
@@ -345,7 +371,12 @@
             
         }
         .map-content{
+            width: 360px;
             margin-bottom: 60px;
+            h1{
+                margin-bottom: 30px;
+            
+            }
         }
         .map-section{
             flex-direction: column;
