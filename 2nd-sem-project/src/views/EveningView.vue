@@ -158,7 +158,7 @@ import EveningMap from '../assets/components/EveningMap.vue'
     align-items: center;
 
 }
-
+*/
 .bottom-footer {
     width: 1120px;
     /* height: 64px; */
