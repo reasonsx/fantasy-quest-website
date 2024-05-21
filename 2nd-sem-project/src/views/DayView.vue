@@ -145,7 +145,7 @@
     }
 }
 
-h1 {
+.first-container h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 70px;
     text-align: center;
@@ -227,11 +227,9 @@ h2 {
     margin-bottom: 10px;
 
 }
-p {
-    font-family: var(--secondary-font);
-}
-.first-container p {
-    font-family: var(--secondary-font);
+
+.first-container p{
+    font-family: Darker Grotesque;
     font-size: 22px;
     color: var(--light-papirus);
     margin-bottom: 20px;
@@ -310,13 +308,6 @@ button:hover:after {
     align-items: center;
     margin-top: 50px;
     margin-bottom: 50px;
-
-    @media screen and (max-width: 768px){
-        flex-direction: column-reverse;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        align-items: stretch;
-    }
 }
 
 .schedule-text-section {
@@ -330,8 +321,32 @@ button:hover:after {
     margin-right: 150px;
     margin-left: 0px;
 
-    @media screen and (max-width: 768px){
-    width: 100%; 
+}
+
+.schedule-text-section p {
+    font-size: 22px;
+    color: #A3883C;
+    margin-bottom: 10px;
+
+}
+
+.clock {
+    width: 400px;
+    height: 400px;
+    margin-right: 0px;
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 768px) {
+    .schedule-container {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .schedule-text-section {
+    width: calc(100% - 20px); 
     margin-right: 10px; 
     margin-left: 10px;
     height: auto; 
@@ -342,33 +357,18 @@ button:hover:after {
     margin-top: 20px;
     margin-bottom: 20px;
     }
-}
 
-.schedule-text-section p {
-    font-size: 22px;
-    color: #A3883C;
-    margin-bottom: 10px;
+    .schedule-text-section p {
+        font-size: 15px; 
+    }
 
-    @media screen and (max-width: 768px){
-        width: 100%; 
+    .clock {
+        width: 80%; 
         height: auto; 
-        font-size: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
+        margin: 20px auto; 
     }
-}
 
-.clock {
-    width: 400px;
-    height: 400px;
-    margin-right: 0px;
-    margin-left: 150px;
-
-    @media screen and (max-width: 768px){
-        width: 60%; 
-        margin:20px auto;
-        height: auto
-    }
+    
 }
 
 /* Third Container */
@@ -578,107 +578,6 @@ iframe{
 
 .sixth-container .btn{
     width: 350px;
-    @media screen and (max-width: 768px){
-        width: auto;
-        
-    }
-}
-footer {
-    width: 100%;
-    height: auto;
-    background-color: var(--red-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.bottom-footer {
-    width: 1120px;
-    /* height: 64px; */
-    display: flex;
-    justify-content: center;
-    gap: 16px;
-    align-items: center;
-    /* flex-direction: column; */
-    margin: 0 0 24px 0;
-
-    @media screen and (max-width: 768px) {
-        width: 360px
-    }
-
-}
-footer p {
-    color: var(--light-papirus);
-    font-family: var(--secondary-font);
-    font-size: 24px;
-    font-weight: 400;
-    margin: 0;
-
-}
-
-.footer-container {
-    width: 1120px;
-    height: auto;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0 24px 0;
-    border-bottom: 1px solid var(--light-papirus);
-
-    @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: auto;
-    }
-
-}
-
-.footer-box {
-    width: auto;
-    height: auto;
-    box-sizing: border-box;
-    overflow: hidden;
-
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        margin: 16px 0;
-    }
-
-}
-
-.footer-box h3 {
-    color: var(--light-papirus);
-    font-family: var(--secondary-font);
-    font-size: 32px;
-    font-weight: 600;
-}
-
-.footer-box:nth-child(4) p {
-    text-decoration: underline;
-}
-
-.footer-box a {
-    color: var(--light-papirus);
-    font-family: var(--secondary-font);
-    font-size: 24px;
-    font-weight: 400;
-    text-decoration: none;
-
-}
-
-.copyright {
-    color: var(--light-papirus);
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    font-weight: 400;
-    margin: 16px 0;
-    display: flex;
-    justify-content: center;
-
 }
 
 
