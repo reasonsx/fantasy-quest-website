@@ -67,7 +67,7 @@ import Portals from '../assets/components/Portals.vue';
                         <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div>
                     </div>
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/realtime-music.jpg" alt=""></div>
+                        <div class="discover-box-top"><img src="../assets/img/family-picture.jpg" alt=""></div>
                     </div>
                     <div class="discover-box">
                         <div class="discover-box-top"><img src="../assets/img/esbjerg-centrum.png" alt=""></div>
@@ -87,7 +87,7 @@ import Portals from '../assets/components/Portals.vue';
                         life. Suitable for all ages, this immersive experience promises a day of magical fun and
                         teamwork amidst the bustling Fantasy Festival.
                     </p>
-                    <div class="centered-button"><button class="primary-button">READ MORE</button></div>
+                    <div class="centered-button"><RouterLink to="/day"><button class="primary-button">READ MORE</button></RouterLink></div>
                 </div>
                 <div class="quest-container">
                     <div class="quest-box"><img src="../assets/img/night-quest-main-page.jpg" alt=""></div>
@@ -95,7 +95,7 @@ import Portals from '../assets/components/Portals.vue';
                     <p>Step into the shadows and become the hero of a thrilling adventure during the Evening Quest at
                         Fantasy Quest Esbjerg. Confront darkness, solve challenges, and save Esbjerg from evil forces as
                         twilight descends. Join alone or with friends for an unforgettable journey under the stars.</p>
-                    <div class="centered-button"><button class="primary-button">READ MORE</button></div>
+                    <div class="centered-button"><RouterLink to="/evening"><button class="primary-button">READ MORE</button></RouterLink></div>
                 </div>
             </div>
             <div class="grey-light-torn-paper-bottom"></div>
@@ -240,6 +240,9 @@ import Portals from '../assets/components/Portals.vue';
         margin-top: 16px; */
 
     }
+}
+.primary-button:hover {
+    background-color: var(--gold-hover);
 }
 
 .portals-background-container {
@@ -623,13 +626,14 @@ import Portals from '../assets/components/Portals.vue';
 }
 
 
-.accordion-label .accordion-label:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+.accordion-label:hover {
+    background-color: var(--gold-hover);
 }
 
 label:hover {
     cursor: pointer;
 }
+
 
 .accordion-content {
     background-color: var(--gold-color);
