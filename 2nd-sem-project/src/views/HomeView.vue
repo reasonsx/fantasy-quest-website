@@ -13,21 +13,28 @@ import Portals from '../assets/components/Portals.vue';
     </div>
 
     <body>
+
         <div class="portals-background-container">
             <h2>CHOOSE YOUR ADVENTURE</h2>
             <div class="portals-container">
                 <div class="day-portal-container">
-                    <div class="portal-box"></div>
-                    <button class="primary-button">
-                        <p>Buy Ticket</p>
-                    </button>
+                    <RouterLink to="/day">
+                        <div class="portal-box"></div>
+                    </RouterLink>
+                    <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target="_blank"><button class="primary-button">BUY
+                            TICKET</button></a>
                 </div>
                 <img src="../assets/img/gold-sword-svg.svg" alt="">
                 <div class="evening-portal-container">
-                    <div class="portal-box"></div>
+                    <RouterLink to="/evening">
+                        <div class="portal-box"></div>
+                    </RouterLink>
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="primary-button">BUY TICKET</button></a>
                 </div>
             </div>
         </div>
+
+
 
 
         <div class="about-background-container">
@@ -81,6 +88,7 @@ import Portals from '../assets/components/Portals.vue';
                         life. Suitable for all ages, this immersive experience promises a day of magical fun and
                         teamwork amidst the bustling Fantasy Festival.
                     </p>
+                    <div class="centered-button"><button class="primary-button">READ MORE</button></div>
                 </div>
                 <div class="quest-container">
                     <div class="quest-box"><img src="../assets/img/night-quest-main-page.jpg" alt=""></div>
@@ -91,112 +99,149 @@ import Portals from '../assets/components/Portals.vue';
                     <div class="centered-button"><button class="primary-button">READ MORE</button></div>
                 </div>
             </div>
-            <div class="grey-torn-paper-bottom"></div>
+            <div class="grey-light-torn-paper-bottom"></div>
         </div>
-    
-    <div class="accordion-container">
-        <h2>FAQ</h2>
-        <div class="accordion">
-            <div class="faq">
-                <input type="checkbox" id="section-1" class="accordion-input">
-                <label for="section-1" class="accordion-label">
-                    <p>What is Fantasy Quest Esbjerg?</p>
-                </label>
-                <div class="accordion-content">
-                    <p>Fantasy Quest Esbjerg is an immersive, magical experience that blends theater, role-playing, and the timeless battle between good and evil. Participants embark on a quest filled with challenges and puzzles, meeting magical creatures and characters along the way.</p>
-                </div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="section-2" class="accordion-input">
-                <label for="section-2" class="accordion-label">
-                    <p>Who can participate in Fantasy Quest Esbjerg?</p>
-                </label>
-                <div class="accordion-content">
-                    <p>The quest is designed for families and friends. The Family Quest is suitable for participants aged 7 and up, while the Evening Quest is geared towards those who enjoy solving complex puzzles and mysteries.</p>
-                </div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="section-3" class="accordion-input">
-                <label for="section-3" class="accordion-label">
-                    <p>What is the story behind Fantasy Quest Esbjerg?</p>
-                </label>
-                <div class="accordion-content">
-                    <p>The story revolves around the legend that evil would come from the sea. In 1995, the sorcerer Gygaz the Wise created a magical defense, incorporating four heroes into the statues "Man by the Sea" to guard Esbjerg. When mysterious events start to happen, the statues awaken, calling for heroes to help fight the emerging evil and close the portals to other worlds.</p>
-                </div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="section-4" class="accordion-input">
-                <label for="section-4" class="accordion-label">
-                    <p>What should I bring to the quest?</p>
-                </label>
-                <div class="accordion-content">
-                    <p>Bring comfortable clothing, suitable for walking around the streets of Esbjerg. If you choose to dress up, ensure your costume is practical for movement and weather conditions.</p>
-                </div>
-            </div>
-            <div class="faq">
-                <input type="checkbox" id="section-5" class="accordion-input">
-                <label for="section-5" class="accordion-label">
-                    <p>Can I participate in both the Family Quest and the Evening Quest?</p>
-                </label>
-                <div class="accordion-content">
-                    <p>Yes, you can choose to participate in both quests if you wish, but you will need to purchase separate tickets for each.</p>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <div class="gold-torn-paper-top"></div>
-    <footer>
-        <div class="footer-container">
-            <div class="footer-box">
-                <h3>Opening hours</h3>
-                <p>Day Quest</p>
-                <p>10.00 - 14.30</p>
-                <p>Evening Quest</p>
-                <p>18.00 - 22.30</p>
-            </div>
-            <div class="footer-box">
-                <h3>Admission</h3>
-                <p><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target="_blank">Day Quest</a></p>
-                <p>DKK 159.13</p>
-                <p><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">Evening Quest</a></p>
-                <p>DKK 243.13</p>
-            </div>
-            <div class="footer-box">
-                <h3>Contact</h3>
-                <p>Telephone</p>
-                <p>+45 76 16 20 00</p>
-                <p>E-mail</p>
-                <p>fantasyfestival@esbjerg.dk</p>
-            </div>
-            <div class="footer-box">
-                <h3>Sponsors</h3>
-                <p><a href="https://www.esbjerg.dk/" target="_blank">Esbjerg Kommune</a></p>
-                <p><a href="https://oplev.esbjerg.dk/" target="_blank">Oplev Esbjerg</a></p>
-                <p><a href="https://www.esbjergbibliotek.dk/" target="_blank">Esbjerg Kommunes Biblioteker</a></p>
+        <div class="accordion-container">
+            <h2>FAQ</h2>
+            <div class="accordion">
+                <div class="faq">
+                    <input type="checkbox" id="section-1" class="accordion-input">
+                    <label for="section-1" class="accordion-label">
+                        <p>What is Fantasy Quest Esbjerg?</p>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Fantasy Quest Esbjerg is an immersive, magical experience that blends theater, role-playing,
+                            and the timeless battle between good and evil. Participants embark on a quest filled with
+                            challenges and puzzles, meeting magical creatures and characters along the way.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="section-2" class="accordion-input">
+                    <label for="section-2" class="accordion-label">
+                        <p>Who can participate in Fantasy Quest Esbjerg?</p>
+                    </label>
+                    <div class="accordion-content">
+                        <p>The quest is designed for families and friends. The Family Quest is suitable for participants
+                            aged 7 and up, while the Evening Quest is geared towards those who enjoy solving complex
+                            puzzles and mysteries.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="section-3" class="accordion-input">
+                    <label for="section-3" class="accordion-label">
+                        <p>What is the story behind Fantasy Quest Esbjerg?</p>
+                    </label>
+                    <div class="accordion-content">
+                        <p>The story revolves around the legend that evil would come from the sea. In 1995, the sorcerer
+                            Gygaz the Wise created a magical defense, incorporating four heroes into the statues "Man by
+                            the Sea" to guard Esbjerg. When mysterious events start to happen, the statues awaken,
+                            calling for heroes to help fight the emerging evil and close the portals to other worlds.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="section-4" class="accordion-input">
+                    <label for="section-4" class="accordion-label">
+                        <p>What should I bring to the quest?</p>
+                    </label>
+                    <div class="accordion-content">
+                        <p>Bring comfortable clothing, suitable for walking around the streets of Esbjerg. If you choose
+                            to dress up, ensure your costume is practical for movement and weather conditions.</p>
+                    </div>
+                </div>
+                <div class="faq">
+                    <input type="checkbox" id="section-5" class="accordion-input">
+                    <label for="section-5" class="accordion-label">
+                        <p>What's the difference between the quests? Can I join both?</p>
+                    </label>
+                    <div class="accordion-content">
+                        <p>The Family Quest is designed for families with children aged 7 and up, featuring easier tasks
+                            that kids can help solve. The Evening Quest, designed by Dystopia, is more challenging and
+                            scary, perfect for those who enjoy a tougher, more thrilling adventure. Yes, you can join
+                            both quests, but you will need to purchase separate tickets for each.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <p class="copyright">© 2024 Fantasy Festival</p>
-        <div class="bottom-footer">
-            <a href="https://www.instagram.com/fantasyfestivalen/" target="_blank"><svg width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M6.96 0H17.04C20.88 0 24 3.12 24 6.96V17.04C24 18.8859 23.2667 20.6562 21.9615 21.9615C20.6562 23.2667 18.8859 24 17.04 24H6.96C3.12 24 0 20.88 0 17.04V6.96C0 5.11409 0.733284 3.34379 2.03854 2.03854C3.34379 0.733284 5.11409 0 6.96 0ZM6.72 2.4C5.57426 2.4 4.47546 2.85514 3.6653 3.6653C2.85514 4.47546 2.4 5.57426 2.4 6.72V17.28C2.4 19.668 4.332 21.6 6.72 21.6H17.28C18.4257 21.6 19.5245 21.1449 20.3347 20.3347C21.1449 19.5245 21.6 18.4257 21.6 17.28V6.72C21.6 4.332 19.668 2.4 17.28 2.4H6.72ZM18.3 4.2C18.6978 4.2 19.0794 4.35804 19.3607 4.63934C19.642 4.92064 19.8 5.30218 19.8 5.7C19.8 6.09782 19.642 6.47936 19.3607 6.76066C19.0794 7.04197 18.6978 7.2 18.3 7.2C17.9022 7.2 17.5206 7.04197 17.2393 6.76066C16.958 6.47936 16.8 6.09782 16.8 5.7C16.8 5.30218 16.958 4.92064 17.2393 4.63934C17.5206 4.35804 17.9022 4.2 18.3 4.2ZM12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4Z"
-                        fill="#FFF6E9" />
-                </svg></a>
-            <a href="https://www.facebook.com/fantasyfestivalen/" target="_blank"><svg width="24" height="24"
-                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                        d="M12 0C5.39999 0 0 5.38799 0 12.024C0 18.024 4.39199 23.004 10.128 23.904V15.504H7.07999V12.024H10.128V9.37199C10.128 6.35999 11.916 4.70399 14.664 4.70399C15.972 4.70399 17.34 4.93199 17.34 4.93199V7.89599H15.828C14.34 7.89599 13.872 8.81999 13.872 9.76799V12.024H17.208L16.668 15.504H13.872V23.904C16.6997 23.4574 19.2746 22.0146 21.1319 19.836C22.9892 17.6575 24.0064 14.8868 24 12.024C24 5.38799 18.6 0 12 0Z"
-                        fill="#FFF6E9" />
-                </svg></a>
-        </div>
-    </footer>
-</body>
+
+        <div class="grey-torn-paper-top"></div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-box">
+                    <h3>Opening hours</h3>
+                    <p>Day Quest</p>
+                    <p>10.00 - 14.30</p>
+                    <p>Evening Quest</p>
+                    <p>18.00 - 22.30</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Admission</h3>
+                    <p><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"
+                            target="_blank">Day Quest</a></p>
+                    <p>DKK 159.13</p>
+                    <p><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                            target="_blank">Evening Quest</a></p>
+                    <p>DKK 243.13</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Contact</h3>
+                    <p>Telephone</p>
+                    <p>+45 76 16 20 00</p>
+                    <p>E-mail</p>
+                    <p>fantasyfestival@esbjerg.dk</p>
+                </div>
+                <div class="footer-box">
+                    <h3>Sponsors</h3>
+                    <p><a href="https://www.esbjerg.dk/" target="_blank">Esbjerg Kommune</a></p>
+                    <p><a href="https://oplev.esbjerg.dk/" target="_blank">Oplev Esbjerg</a></p>
+                    <p><a href="https://www.esbjergbibliotek.dk/" target="_blank">Esbjerg Kommunes Biblioteker</a></p>
+                </div>
+            </div>
+            <p class="copyright">© 2024 Fantasy Festival</p>
+            <div class="bottom-footer">
+                <a href="https://www.instagram.com/fantasyfestivalen/" target="_blank"><svg width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.96 0H17.04C20.88 0 24 3.12 24 6.96V17.04C24 18.8859 23.2667 20.6562 21.9615 21.9615C20.6562 23.2667 18.8859 24 17.04 24H6.96C3.12 24 0 20.88 0 17.04V6.96C0 5.11409 0.733284 3.34379 2.03854 2.03854C3.34379 0.733284 5.11409 0 6.96 0ZM6.72 2.4C5.57426 2.4 4.47546 2.85514 3.6653 3.6653C2.85514 4.47546 2.4 5.57426 2.4 6.72V17.28C2.4 19.668 4.332 21.6 6.72 21.6H17.28C18.4257 21.6 19.5245 21.1449 20.3347 20.3347C21.1449 19.5245 21.6 18.4257 21.6 17.28V6.72C21.6 4.332 19.668 2.4 17.28 2.4H6.72ZM18.3 4.2C18.6978 4.2 19.0794 4.35804 19.3607 4.63934C19.642 4.92064 19.8 5.30218 19.8 5.7C19.8 6.09782 19.642 6.47936 19.3607 6.76066C19.0794 7.04197 18.6978 7.2 18.3 7.2C17.9022 7.2 17.5206 7.04197 17.2393 6.76066C16.958 6.47936 16.8 6.09782 16.8 5.7C16.8 5.30218 16.958 4.92064 17.2393 4.63934C17.5206 4.35804 17.9022 4.2 18.3 4.2ZM12 6C13.5913 6 15.1174 6.63214 16.2426 7.75736C17.3679 8.88258 18 10.4087 18 12C18 13.5913 17.3679 15.1174 16.2426 16.2426C15.1174 17.3679 13.5913 18 12 18C10.4087 18 8.88258 17.3679 7.75736 16.2426C6.63214 15.1174 6 13.5913 6 12C6 10.4087 6.63214 8.88258 7.75736 7.75736C8.88258 6.63214 10.4087 6 12 6ZM12 8.4C11.0452 8.4 10.1295 8.77928 9.45442 9.45442C8.77928 10.1295 8.4 11.0452 8.4 12C8.4 12.9548 8.77928 13.8705 9.45442 14.5456C10.1295 15.2207 11.0452 15.6 12 15.6C12.9548 15.6 13.8705 15.2207 14.5456 14.5456C15.2207 13.8705 15.6 12.9548 15.6 12C15.6 11.0452 15.2207 10.1295 14.5456 9.45442C13.8705 8.77928 12.9548 8.4 12 8.4Z"
+                            fill="#FFF6E9" />
+                    </svg></a>
+                <a href="https://www.facebook.com/fantasyfestivalen/" target="_blank"><svg width="24" height="24"
+                        viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M12 0C5.39999 0 0 5.38799 0 12.024C0 18.024 4.39199 23.004 10.128 23.904V15.504H7.07999V12.024H10.128V9.37199C10.128 6.35999 11.916 4.70399 14.664 4.70399C15.972 4.70399 17.34 4.93199 17.34 4.93199V7.89599H15.828C14.34 7.89599 13.872 8.81999 13.872 9.76799V12.024H17.208L16.668 15.504H13.872V23.904C16.6997 23.4574 19.2746 22.0146 21.1319 19.836C22.9892 17.6575 24.0064 14.8868 24 12.024C24 5.38799 18.6 0 12 0Z"
+                            fill="#FFF6E9" />
+                    </svg></a>
+            </div>
+        </footer>
+    </body>
 </template>
 
 <style scoped>
+.centered-button {
+    display: flex;
+    justify-content: center;
+}
 
+.primary-button {
+    background-color: var(--gold-color);
+    width: 180px;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--black-color);
+
+    @media screen and (max-width: 768px) {
+        /* width: 120px;
+        height: 32px;
+        font-size: px;
+        margin-top: 16px; */
+
+    }
+}
 
 .portals-background-container {
     height: auto;
@@ -216,8 +261,8 @@ import Portals from '../assets/components/Portals.vue';
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
-        flex-direction: column;
-        align-items: center;
+        /* flex-direction: column; */
+        /* align-items: center; */
         width: 360px;
 
     }
@@ -227,9 +272,20 @@ import Portals from '../assets/components/Portals.vue';
     width: auto;
     height: 600px;
 
+    @media screen and (max-width: 768px) {
+        display: none;
+
+    }
+
 }
 
 .day-portal-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.evening-portal-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -248,50 +304,18 @@ import Portals from '../assets/components/Portals.vue';
     -webkit-mask: var(--mask);
     mask: var(--mask);
 
-}
-
-.centered-button {
-    display: flex;
-    justify-content: center;
-    /* margin-top: 24px; */
-
-}
-
-.primary-button {
-    background-color: var(--gold-color);
-    width: 180px;
-    height: 48px;
-    border-radius: 64px;
-    border: none;
-    margin-top: 24px;
-    /* color: var(--black-color); */
-    /* font-size: 16px; */
-    /* font-weight: 800; */
-    /* font-family: var(--secondary-font); */
-    letter-spacing: 2px;
-    font-weight: 500;
-    /* font-size: 16px; */
-
-    p {
-        color: var(--light-papirus);
-        font-size: 16px;
-        font-weight: 700;
-        font-family: var(--secondary-font);
-        letter-spacing: 1px;
-
+    @media screen and (max-width: 768px) {
+        width: 164px;
+        height: 280px;
+        /* border-radius: 90px 90px 0 0; */
+        /* border: 6px solid var(--gold-color); */
+        --mask: radial-gradient(16px at 16px 100%, #0000 98%, #000) -16px;
+        /* -webkit-mask: var(--mask); */
+        /* mask: var(--mask); */
     }
-}
-
-.primary-button:hover {
-    scale: 1.1;
 
 }
 
-/* .button-text {
-    font-family: 'Dark Grotesque', sans-serif;
-    font-weight: 600;
-    font-size: 16px;
-} */
 .about-background-container {
     width: 100%;
     height: auto;
@@ -370,16 +394,19 @@ import Portals from '../assets/components/Portals.vue';
     justify-content: center;
     align-items: center;
 }
+
 .characters-container img {
     width: auto;
     height: 400px;
     object-fit: cover;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         width: 360px;
         height: auto;
-        
+
     }
 }
+
 .discover-background-container {
     width: 100%;
     height: auto;
@@ -508,6 +535,12 @@ import Portals from '../assets/components/Portals.vue';
 .quest-container p {
     color: var(--light-papirus);
     font-size: 24px;
+    height: 196px;
+
+    @media screen and (max-width: 768px) {
+        height: auto;
+
+    }
 }
 
 .quest-box {
@@ -547,7 +580,7 @@ import Portals from '../assets/components/Portals.vue';
 
 .accordion-container h2 {
     color: var(--gold-color);
-    margin: 64px 0;
+    margin: 64px 0 16px 0;
     text-align: center;
 }
 
@@ -574,7 +607,7 @@ import Portals from '../assets/components/Portals.vue';
     height: 64px;
     display: block;
     color: var(--light-papirus);
-    background-color: var(--black-color);
+    background-color: var(--gold-color);
     /* border: 4px solid var(--gold-color); */
     font-weight: bold;
     cursor: pointer;
@@ -582,20 +615,25 @@ import Portals from '../assets/components/Portals.vue';
     transition: background-color 0.1s;
     margin-top: 16px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    @media screen and (max-width: 768px){
+
+    @media screen and (max-width: 768px) {
         height: auto;
-        
+
     }
-    
+
 }
 
-.accordion-label
-.accordion-label:hover {
+
+.accordion-label .accordion-label:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+label:hover {
+    cursor: pointer;
+}
+
 .accordion-content {
-    background-color: var(--black-color);
+    background-color: var(--gold-color);
     color: var(--light-papirus);
     line-height: 1.6;
     font-size: 0.85em;
@@ -613,7 +651,7 @@ import Portals from '../assets/components/Portals.vue';
 footer {
     width: 100%;
     height: auto;
-    background-color: var(--gold-color);
+    background-color: var(--black-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -636,6 +674,7 @@ footer {
     }
 
 }
+
 footer p {
     color: var(--light-papirus);
     font-family: var(--secondary-font);
@@ -686,6 +725,7 @@ footer p {
 .footer-box:nth-child(4) a {
     text-decoration: underline;
 }
+
 .footer-box:nth-child(2) a {
     text-decoration: underline;
 }
@@ -707,5 +747,4 @@ footer p {
     margin: 16px 0;
 
 }
-
 </style>

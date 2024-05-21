@@ -170,6 +170,18 @@ button:hover {
   background: url('../src/assets/img/silver-torn-paper-bottom.svg') no-repeat;
   background-size: cover;
 }
+.grey-light-torn-paper-bottom {
+  display: flex;
+  height: 140px;
+  width: 100%;
+  background: url('../src/assets/img/grey-light-torn-paper-bottom-svg.svg') no-repeat;
+  background-size: cover;
+  @media screen and (max-width: 768px) {
+    height: 64px;
+    
+  }
+
+}
 
 
 
