@@ -525,9 +525,6 @@ iframe{
     }
 }
 
-
-
-
 /* Sixth Container */
 .sixth-container {
     display: flex;
