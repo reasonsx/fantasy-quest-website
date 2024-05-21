@@ -1,5 +1,4 @@
-<script >
-import { RouterLink } from 'vue-router'
+<script setup>
 import Footer from '../assets/components/Footer.vue'
 import EveningHero from '../assets/components/EveningHero.vue'
 
@@ -98,10 +97,6 @@ import EveningHero from '../assets/components/EveningHero.vue'
     
     </body>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped>
     

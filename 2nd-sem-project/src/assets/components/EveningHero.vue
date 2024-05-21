@@ -16,8 +16,24 @@ export default {
 </script>
 
 <style scoped>
+ h1{
+        font-family: var(--primary-font);
+        font-size: 100px;
+    }
+    p{
+        font-family: var(--secondary-font);
+        font-size: 20px;
+    }
+    @media screen and (max-width: 768px){
+        h1{
+            font-size: 48px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
 .hero-container {
-        background-image: url('../assets/img/hero_image-edited2.png');
+        background-image: url('../img/hero_image-edited2.png');
         background-size: cover;
         background-position: center;
         height: 100vh;
