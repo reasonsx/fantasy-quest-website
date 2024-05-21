@@ -535,7 +535,7 @@ iframe{
 }
 
 .sixth-container .btn{
-    width: 350px;
+    width: 450px;
 }
 
 
