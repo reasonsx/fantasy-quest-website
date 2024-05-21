@@ -45,7 +45,7 @@ import Portals from '../assets/components/Portals.vue';
         </div>
         <div class="characters-background-container">
             <div class="gold-torn-paper-top"></div>
-            <div class="characters-container"></div>
+            <div class="characters-container"><img src="../assets/img/characters-main-page-svg.svg" alt=""></div>
             <!-- <div class="gold-torn-paper-bottom"></div> -->
         </div>
         <div class="discover-background-container">
@@ -314,12 +314,24 @@ import Portals from '../assets/components/Portals.vue';
 
 .characters-container {
     width: 100%;
-    height: 256px;
+    height: 100%;
     background-color: var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.characters-container img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        height: auto;
+        
+    }
+}
 .discover-background-container {
     width: 100%;
     height: auto;
