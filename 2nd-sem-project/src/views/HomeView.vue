@@ -5,11 +5,10 @@ import Portals from '../assets/components/Portals.vue';
 <template>
     <div class="home">
         <Portals />
-        <nav>
+        <!-- <nav>
             <RouterLink to="/day">Day</RouterLink>
             <RouterLink to="/evening">Evening</RouterLink>
-            <!-- divs of the portals  -->
-        </nav>
+        </nav> -->
     </div>
 
     <body>
@@ -119,7 +118,7 @@ import Portals from '../assets/components/Portals.vue';
                 <div class="faq">
                     <input type="checkbox" id="section-2" class="accordion-input">
                     <label for="section-2" class="accordion-label">
-                        <p>Who can participate in Fantasy Quest Esbjerg?</p>
+                        <p>Who can participate?</p>
                     </label>
                     <div class="accordion-content">
                         <p>The quest is designed for families and friends. The Family Quest is suitable for participants
@@ -300,8 +299,8 @@ import Portals from '../assets/components/Portals.vue';
     border: 12px solid var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
-    --mask: radial-gradient(32px at 32px 100%, #0000 98%, #000) -32px;
-    -webkit-mask: var(--mask);
+    /* --mask: radial-gradient(32px at 32px 100%, #0000 98%, #000) -32px; */
+    /* -webkit-mask: var(--mask); */
     mask: var(--mask);
 
     @media screen and (max-width: 768px) {

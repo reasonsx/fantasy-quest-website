@@ -6,13 +6,12 @@ import DayView from './views/DayView.vue'
 
 <template>
   <header>
-    <ul>
-      <li class="logo"></li>
-      <li>
-        <p>Fantasy Quest Esbjerg</p>
-      </li>
-    </ul>
-
+    <nav>
+      <ul>
+        <li><RouterLink to="/day"><p>DAY QUEST</p></RouterLink></li>
+        <li><RouterLink to="/evening"><p>EVENING QUEST</p></RouterLink></li>
+      </ul>
+    </nav>
   </header>
 
   <body>
@@ -32,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
 }
+
 h2 {
     font-family: var(--primary-font);
     font-size: 48px;
@@ -46,17 +46,51 @@ p {
   font-family: var(--secondary-font);
   font-size: 24px;
 }
+header {
+  display: flex;
+  justify-content: center;
+  height: 96px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 64px;
+  /* background: var(--black-color); */
+  background: rgba(0,0,0,0.8);
+  mask: var(--mask);
+  position: fixed;
+  top: 0;
+  z-index: 100;
 
+}
 ul {
   display: flex;
-  margin: 10px;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-
 li {
   list-style-type: none;
-  margin: 10px;
-
+  margin: 0;
+  padding: 0;
+}
+nav a {
+text-decoration: none;
+}
+nav ul li p {
+  color: var(--light-papirus);
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 600;
+}
+nav ul li p:hover {
+  cursor: pointer;
+  filter: brightness(90%);
+  border-bottom: 2px solid var(--light-papirus);
 }
 button:hover {
   cursor: pointer;
