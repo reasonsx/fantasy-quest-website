@@ -108,9 +108,9 @@
             </div>
             <div class="footer-box">
                 <h3>Admission</h3>
-                <p>Day Quest</p>
+                <p><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target="_blank">Day Quest</a></p>
                 <p>DKK 159.13</p>
-                <p>Evening Quest</p>
+                <p><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank">Evening Quest</a></p>
                 <p>DKK 243.13</p>
             </div>
             <div class="footer-box">
@@ -513,7 +513,9 @@ footer p {
 .footer-box:nth-child(4) p {
     text-decoration: underline;
 }
-
+.footer-box:nth-child(2) a {
+    text-decoration: underline;
+}
 .footer-box a {
     color: var(--light-papirus);
     font-family: var(--secondary-font);
