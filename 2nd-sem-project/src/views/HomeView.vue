@@ -14,7 +14,7 @@ import Portals from '../assets/components/Portals.vue';
 
     <body>
         <div class="portals-background-container">
-            <h2>CHOOSE YOUR SIDE</h2>
+            <h2>CHOOSE YOUR ADVENTURE</h2>
             <div class="portals-container">
                 <div class="day-portal-container">
                     <div class="portal-box"></div>
@@ -45,7 +45,7 @@ import Portals from '../assets/components/Portals.vue';
         </div>
         <div class="characters-background-container">
             <div class="gold-torn-paper-top"></div>
-            <div class="characters-container"></div>
+            <div class="characters-container"><img src="../assets/img/characters-main-page-svg.svg" alt=""></div>
             <!-- <div class="gold-torn-paper-bottom"></div> -->
         </div>
         <div class="discover-background-container">
@@ -54,7 +54,8 @@ import Portals from '../assets/components/Portals.vue';
                 <h2>Discover</h2>
                 <div class="discover-boxes-container">
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div><h3>Lakserytteren</h3>
+                        <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
+                        <h3>Lakserytteren</h3>
                     </div>
                     <div class="discover-box">
                         <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div>
@@ -63,14 +64,14 @@ import Portals from '../assets/components/Portals.vue';
                         <div class="discover-box-top"><img src="../assets/img/realtime-music.jpg" alt=""></div>
                     </div>
                     <div class="discover-box">
-                        <div class="discover-box-top"></div>
+                        <div class="discover-box-top"><img src="../assets/img/esbjerg-centrum.png" alt=""></div>
                     </div>
                 </div>
             </div>
         </div>
 
         <div class="quests-background-container">
-            <div class="grey-torn-paper-top"></div>
+            <div class="black-and-light-torn-paper-top"></div>
             <div class="quests-container">
                 <div class="quest-container">
                     <div class="quest-box"><img src="../assets/img/day-quest-main-page.jpg" alt=""></div>
@@ -145,14 +146,15 @@ import Portals from '../assets/components/Portals.vue';
     </div>
 
     <div class="gold-torn-paper-top"></div>
-    <!-- <footer></footer> -->
 </template>
 
-<style>
+<style scoped>
+
 .portals-background-container {
     height: auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .portals-background-container h2 {
@@ -161,14 +163,14 @@ import Portals from '../assets/components/Portals.vue';
 }
 
 .portals-container {
-    width: auto;
+    width: 1120px;
     display: flex;
-    justify-content: space-evenly;
-    padding: 0 10%;
+    justify-content: space-between;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
+        width: 360px;
 
     }
 }
@@ -204,6 +206,7 @@ import Portals from '../assets/components/Portals.vue';
     display: flex;
     justify-content: center;
     /* margin-top: 24px; */
+
 }
 
 .primary-button {
@@ -217,14 +220,23 @@ import Portals from '../assets/components/Portals.vue';
     /* font-size: 16px; */
     /* font-weight: 800; */
     /* font-family: var(--secondary-font); */
+    letter-spacing: 2px;
+    font-weight: 500;
+    /* font-size: 16px; */
 
     p {
         color: var(--light-papirus);
         font-size: 16px;
         font-weight: 700;
         font-family: var(--secondary-font);
+        letter-spacing: 1px;
 
     }
+}
+
+.primary-button:hover {
+    scale: 1.1;
+
 }
 
 /* .button-text {
@@ -302,12 +314,24 @@ import Portals from '../assets/components/Portals.vue';
 
 .characters-container {
     width: 100%;
-    height: 256px;
+    height: 100%;
     background-color: var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.characters-container img {
+    width: auto;
+    height: 400px;
+    object-fit: cover;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        height: auto;
+        
+    }
+}
 .discover-background-container {
     width: 100%;
     height: auto;
@@ -359,6 +383,7 @@ import Portals from '../assets/components/Portals.vue';
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
 .discover-box h3 {
     color: var(--gold-color);
     margin: 24px 0;
@@ -376,7 +401,7 @@ import Portals from '../assets/components/Portals.vue';
     width: 256px;
     height: 256px;
     object-fit: cover;
-    
+
 }
 
 .quests-background-container {
@@ -397,6 +422,7 @@ import Portals from '../assets/components/Portals.vue';
     overflow: hidden;
     display: flex;
     justify-content: space-between;
+    padding: 64px 0 0 0;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
@@ -440,6 +466,7 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     background-color: var(--light-papirus);
+
     @media screen and (max-width: 768px) {
         width: 360px;
         height: 180px;
@@ -452,6 +479,7 @@ import Portals from '../assets/components/Portals.vue';
     width: 544px;
     height: 306px;
     object-fit: cover;
+
     @media screen and (max-width: 768px) {
         width: 360px;
         height: 180px;
