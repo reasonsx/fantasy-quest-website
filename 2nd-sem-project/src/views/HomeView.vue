@@ -35,9 +35,8 @@ import Portals from '../assets/components/Portals.vue';
 
 
 
-
+        <div class="grey-torn-paper-top"></div>
         <div class="about-background-container">
-            <div class="grey-torn-paper-top"></div>
             <div class="about-container">
                 <div class="about-box"></div>
                 <h2>About</h2>
@@ -52,10 +51,10 @@ import Portals from '../assets/components/Portals.vue';
         <div class="characters-background-container">
             <div class="gold-torn-paper-top"></div>
             <div class="characters-container"><img src="../assets/img/characters-main-page-svg.svg" alt=""></div>
-            <!-- <div class="gold-torn-paper-bottom"></div> -->
+            
         </div>
+        <div class="gold-torn-paper-bottom"></div>
         <div class="discover-background-container">
-            <div class="light-torn-paper-top"></div>
             <div class="discover-container">
                 <h2>Discover</h2>
                 <div class="discover-boxes-container">
@@ -75,9 +74,10 @@ import Portals from '../assets/components/Portals.vue';
                 </div>
             </div>
         </div>
-
+            
+            
+<div class="grey-torn-paper-top"></div>
         <div class="quests-background-container">
-            <div class="black-and-light-torn-paper-top"></div>
             <div class="quests-container">
                 <div class="quest-container">
                     <div class="quest-box"><img src="../assets/img/day-quest-main-page.jpg" alt=""></div>
@@ -98,8 +98,8 @@ import Portals from '../assets/components/Portals.vue';
                     <div class="centered-button"><RouterLink to="/evening"><button class="primary-button">READ MORE</button></RouterLink></div>
                 </div>
             </div>
-            <div class="grey-light-torn-paper-bottom"></div>
         </div>
+        <div class="grey-torn-paper-bottom"></div>
 
         <div class="accordion-container">
             <h2>FAQ</h2>
@@ -401,14 +401,12 @@ import Portals from '../assets/components/Portals.vue';
     width: auto;
     height: 400px;
     object-fit: cover;
-
     @media screen and (max-width: 768px) {
         width: 360px;
         height: auto;
 
     }
 }
-
 .discover-background-container {
     width: 100%;
     height: auto;
@@ -419,12 +417,13 @@ import Portals from '../assets/components/Portals.vue';
 }
 
 .discover-container {
-    width: 1120px;
+    width: 1130px;
     height: auto;
     /* background-color: var(--grey-color); */
     box-sizing: border-box;
     overflow: hidden;
     margin: 32px 0 0 0;
+    padding: 0 5px;
 
     @media screen and (max-width: 768px) {
         width: 360px;
@@ -587,13 +586,8 @@ import Portals from '../assets/components/Portals.vue';
 }
 
 .accordion {
-    /* margin: 128px 0; */
     width: 1120px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     overflow: hidden;
-
-    /* border: 4px solid var(--light-papirus); */
     @media screen and (max-width: 768px) {
         width: 360px;
 
@@ -610,7 +604,6 @@ import Portals from '../assets/components/Portals.vue';
     display: block;
     color: var(--light-papirus);
     background-color: var(--gold-color);
-    /* border: 4px solid var(--gold-color); */
     font-weight: bold;
     cursor: pointer;
     position: relative;

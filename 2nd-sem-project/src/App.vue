@@ -49,7 +49,7 @@ p {
 header {
   display: flex;
   justify-content: center;
-  height: 96px;
+  /* height: 96px; */
 }
 nav {
   display: flex;
@@ -58,9 +58,9 @@ nav {
   width: 80%;
   height: 64px;
   /* background: var(--black-color); */
-  background: rgba(0,0,0,0.8);
+  background: var(--black-color);
   mask: var(--mask);
-  position: fixed;
+  position:absolute;
   top: 0;
   z-index: 100;
 
