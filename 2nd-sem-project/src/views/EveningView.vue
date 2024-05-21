@@ -159,7 +159,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: var(--light-papirus);
+        color: var(--silver-color);
         position: relative;
     }
     h1{
@@ -308,7 +308,7 @@
         align-items: center;
         width: 100%;
         background-color: var(--silver-color);
-        color: var(--light-papirus);
+        color: var(--purple-color);
     }
     .map-content{
         display: flex;
