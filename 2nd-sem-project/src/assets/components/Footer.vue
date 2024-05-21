@@ -9,12 +9,14 @@
                 <p>18.00 - 22.30</p>
             </div>
             <div class="footer-box">
-                <h3>Admission</h3>
-                <p>Day Quest</p>
-                <p>DKK 159.13</p>
-                <p>Evening Quest</p>
-                <p>DKK 243.13</p>
-            </div>
+                    <h3>Admission</h3>
+                    <p><a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3"
+                            target="_blank">Day Quest</a></p>
+                    <p>DKK 159.13</p>
+                    <p><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                            target="_blank">Evening Quest</a></p>
+                    <p>DKK 243.13</p>
+                </div>
             <div class="footer-box">
                 <h3>Contact</h3>
                 <p>Telephone</p>
@@ -53,7 +55,6 @@
 footer {
     width: 100%;
     height: auto;
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,6 +124,9 @@ footer p {
 }
 
 .footer-box:nth-child(4) p {
+    text-decoration: underline;
+}
+.footer-box:nth-child(2) a {
     text-decoration: underline;
 }
 

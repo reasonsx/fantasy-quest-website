@@ -31,7 +31,16 @@ body {
   display: flex;
   flex-direction: column;
 }
-
+.primary-button {
+    width: 180px;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--black-color);
+}
 h2 {
     font-family: var(--primary-font);
     font-size: 48px;
@@ -182,13 +191,7 @@ button:hover {
   background: url('../src/assets/img/bottom-red-torn-paper.svg') no-repeat;
   background-size: cover;
 }
-.black-and-light-torn-paper-top{
-  display: flex;
-  height: 120px;
-  width: 100%;
-  background: url('../src/assets/img/grey-light-torn-paper-top-svg.svg') no-repeat;
-  background-size: cover;
-}
+
 
 .silver-torn-paper-top { 
   display: flex;
@@ -204,18 +207,7 @@ button:hover {
   background: url('../src/assets/img/silver-torn-paper-bottom.svg') no-repeat;
   background-size: cover;
 }
-.grey-light-torn-paper-bottom {
-  display: flex;
-  height: 140px;
-  width: 100%;
-  background: url('../src/assets/img/grey-light-torn-paper-bottom-svg.svg') no-repeat;
-  background-size: cover;
-  @media screen and (max-width: 768px) {
-    height: 64px;
-    
-  }
 
-}
 
 
 
