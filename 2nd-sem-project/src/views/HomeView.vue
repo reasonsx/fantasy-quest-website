@@ -100,46 +100,46 @@ import Portals from '../assets/components/Portals.vue';
             <div class="faq">
                 <input type="checkbox" id="section-1" class="accordion-input">
                 <label for="section-1" class="accordion-label">
-                    <p>Question #1</p>
+                    <p>What is Fantasy Quest Esbjerg?</p>
                 </label>
                 <div class="accordion-content">
-                    <p>Content #1</p>
+                    <p>Fantasy Quest Esbjerg is an immersive, magical experience that blends theater, role-playing, and the timeless battle between good and evil. Participants embark on a quest filled with challenges and puzzles, meeting magical creatures and characters along the way.</p>
                 </div>
             </div>
             <div class="faq">
                 <input type="checkbox" id="section-2" class="accordion-input">
                 <label for="section-2" class="accordion-label">
-                    <p>Question #2</p>
+                    <p>Who can participate in Fantasy Quest Esbjerg?</p>
                 </label>
                 <div class="accordion-content">
-                    <p>Content #2</p>
+                    <p>The quest is designed for families and friends. The Family Quest is suitable for participants aged 7 and up, while the Evening Quest is geared towards those who enjoy solving complex puzzles and mysteries.</p>
                 </div>
             </div>
             <div class="faq">
                 <input type="checkbox" id="section-3" class="accordion-input">
                 <label for="section-3" class="accordion-label">
-                    <p>Question #3</p>
+                    <p>What is the story behind Fantasy Quest Esbjerg?</p>
                 </label>
                 <div class="accordion-content">
-                    <p>Content #3</p>
+                    <p>The story revolves around the legend that evil would come from the sea. In 1995, the sorcerer Gygaz the Wise created a magical defense, incorporating four heroes into the statues "Man by the Sea" to guard Esbjerg. When mysterious events start to happen, the statues awaken, calling for heroes to help fight the emerging evil and close the portals to other worlds.</p>
                 </div>
             </div>
             <div class="faq">
                 <input type="checkbox" id="section-4" class="accordion-input">
                 <label for="section-4" class="accordion-label">
-                    <p>Question #4</p>
+                    <p>What should I bring to the quest?</p>
                 </label>
                 <div class="accordion-content">
-                    <p>Content #4</p>
+                    <p>Bring comfortable clothing, suitable for walking around the streets of Esbjerg. If you choose to dress up, ensure your costume is practical for movement and weather conditions.</p>
                 </div>
             </div>
             <div class="faq">
                 <input type="checkbox" id="section-5" class="accordion-input">
                 <label for="section-5" class="accordion-label">
-                    <p>Question #5</p>
+                    <p>Can I participate in both the Family Quest and the Evening Quest?</p>
                 </label>
                 <div class="accordion-content">
-                    <p>Content #5</p>
+                    <p>Yes, you can choose to participate in both quests if you wish, but you will need to purchase separate tickets for each.</p>
                 </div>
             </div>
         </div>
@@ -555,9 +555,8 @@ import Portals from '../assets/components/Portals.vue';
     /* margin: 128px 0; */
     width: 1120px;
     /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
     overflow: hidden;
-    background-color: var(--black-color);
 
     /* border: 4px solid var(--light-papirus); */
     @media screen and (max-width: 768px) {
@@ -575,20 +574,29 @@ import Portals from '../assets/components/Portals.vue';
     height: 64px;
     display: block;
     color: var(--light-papirus);
-    /* background-color: var(--light-papirus); */
+    background-color: var(--black-color);
     /* border: 4px solid var(--gold-color); */
     font-weight: bold;
     cursor: pointer;
     position: relative;
     transition: background-color 0.1s;
+    margin-top: 16px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    @media screen and (max-width: 768px){
+        height: auto;
+        
+    }
+    
 }
 
+.accordion-label
 .accordion-label:hover {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
 .accordion-content {
-    background: white;
+    background-color: var(--black-color);
+    color: var(--light-papirus);
     line-height: 1.6;
     font-size: 0.85em;
     display: none;
