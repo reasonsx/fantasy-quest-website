@@ -578,6 +578,10 @@ iframe{
 
 .sixth-container .btn{
     width: 350px;
+    @media screen and (max-width: 768px){
+        width: auto;
+        
+    }
 }
 footer {
     width: 100%;
