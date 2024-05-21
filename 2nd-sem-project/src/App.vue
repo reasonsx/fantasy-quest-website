@@ -31,16 +31,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-.primary-button {
-    width: 180px;
-    height: 48px;
-    border-radius: 64px;
-    border: none;
-    margin-top: 24px;
-    letter-spacing: 2px;
-    font-weight: 600;
-    color: var(--black-color);
-}
 h2 {
     font-family: var(--primary-font);
     font-size: 48px;

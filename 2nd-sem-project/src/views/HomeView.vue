@@ -64,16 +64,16 @@ Years of peace were shattered when dark clouds and a winged creature appeared ov
                 <div class="discover-boxes-container">
                     <div class="discover-box">
                         <div class="discover-box-top"><img src="../assets/img/Lakse_frontpage.jpg" alt=""></div>
-                        <h3>Lakserytteren</h3>
+                        <h3>Quest story by Lakserytteren</h3>
                     </div>
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div>
+                        <div class="discover-box-top"><img src="../assets/img/professional-actors.png" alt=""></div><h3>Professional Actors</h3>
                     </div>
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/family-picture.jpg" alt=""></div>
+                        <div class="discover-box-top"><img src="../assets/img/family-picture.jpg" alt=""></div><h3>Roleplay For Everyone</h3>
                     </div>
                     <div class="discover-box">
-                        <div class="discover-box-top"><img src="../assets/img/esbjerg-centrum.png" alt=""></div>
+                        <div class="discover-box-top"><img src="../assets/img/esbjerg-centrum.png" alt=""></div><h3>Esbjerg City Center</h3>
                     </div>
                 </div>
             </div>
@@ -348,6 +348,11 @@ Years of peace were shattered when dark clouds and a winged creature appeared ov
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: 768px){
+        flex-direction: column;
+        align-items: center;
+        width: 360px;        
+    }
 }
 .characters-container p {
     color: var(--black-color);
