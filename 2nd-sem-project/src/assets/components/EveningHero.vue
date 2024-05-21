@@ -9,10 +9,7 @@
         </div>
 </template>
 
-<script >
-export default {
-    name: 'EveningHero'
-}
+<script setup>
 </script>
 
 <style scoped>

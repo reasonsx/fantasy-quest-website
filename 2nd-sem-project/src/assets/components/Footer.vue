@@ -1,9 +1,3 @@
-<script>
-export default {
-    name: 'Footer'
-}
-</script>
-
 <template>
     <footer>
         <div class="footer-container">
@@ -53,6 +47,7 @@ export default {
     </footer>
 </template>
 
+<script setup></script>
 
 <style scoped>
 footer {
