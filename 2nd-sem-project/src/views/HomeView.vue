@@ -1,38 +1,13 @@
 <script setup>
 import Footer from '../assets/components/Footer.vue'
-import Portals from '../assets/components/Portals.vue';
+import HomeHero from '../assets/components/Home/HomeHero.vue';
 </script>
 
 <template>
-    <div class="home">
-        <Portals />
-        <!-- <nav>
-            <RouterLink to="/day">Day</RouterLink>
-            <RouterLink to="/evening">Evening</RouterLink>
-        </nav> -->
-    </div>
-
     <body>
+        <HomeHero />
 
-        <div class="portals-background-container">
-            <h2>CHOOSE YOUR ADVENTURE</h2>
-            <div class="portals-container">
-                <div class="day-portal-container">
-                    <RouterLink to="/day">
-                        <div class="portal-box"></div>
-                    </RouterLink>
-                    <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target="_blank"><button class="primary-button">BUY
-                            TICKET</button></a>
-                </div>
-                <img src="../assets/img/gold-sword-svg.svg" alt="">
-                <div class="evening-portal-container">
-                    <RouterLink to="/evening">
-                        <div class="portal-box"></div>
-                    </RouterLink>
-                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="primary-button">BUY TICKET</button></a>
-                </div>
-            </div>
-        </div>
+        
 
 
 
@@ -195,7 +170,7 @@ Years of peace were shattered when dark clouds and a winged creature appeared ov
     background-color: var(--gold-hover);
 }
 
-
+/* 
 
 .portals-background-container {
     height: auto;
@@ -215,8 +190,6 @@ Years of peace were shattered when dark clouds and a winged creature appeared ov
     justify-content: space-between;
 
     @media screen and (max-width: 768px) {
-        /* flex-direction: column; */
-        /* align-items: center; */
         width: 360px;
 
     }
@@ -254,21 +227,15 @@ Years of peace were shattered when dark clouds and a winged creature appeared ov
     border: 12px solid var(--gold-color);
     box-sizing: border-box;
     overflow: hidden;
-    /* --mask: radial-gradient(32px at 32px 100%, #0000 98%, #000) -32px; */
-    /* -webkit-mask: var(--mask); */
     mask: var(--mask);
 
     @media screen and (max-width: 768px) {
         width: 164px;
         height: 280px;
-        /* border-radius: 90px 90px 0 0; */
-        /* border: 6px solid var(--gold-color); */
         --mask: radial-gradient(16px at 16px 100%, #0000 98%, #000) -16px;
-        /* -webkit-mask: var(--mask); */
-        /* mask: var(--mask); */
     }
 
-}
+} */
 
 .about-background-container {
     width: 100%;
