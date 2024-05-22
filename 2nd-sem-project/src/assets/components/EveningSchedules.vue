@@ -14,7 +14,7 @@
                         <br>
                         Price: 243.13 DKK per person
                     </p>
-                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="primary-button">BUY TICKET</button></a>
                 </div>
                 <div class="clock">
                     <svg width="414" height="414" viewBox="0 0 414 414" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -32,6 +32,22 @@
 </script>
 
 <style scoped>
+.primary-button {
+    background-color: var(--purple-color);
+    width: auto;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--silver-color);
+    padding: 0 40px;
+}
+
+.primary-button:hover {
+    background-color: #853960;
+}
     h1{
         font-family: var(--primary-font);
         font-size: 100px;

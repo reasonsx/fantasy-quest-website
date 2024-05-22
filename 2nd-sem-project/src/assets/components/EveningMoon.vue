@@ -9,7 +9,7 @@
                 <div class="moon-text">
                     <h1>Lorem ipsum</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco    nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="button-silver"><p>Buy Ticket</p></button></a>
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4" target="_blank"><button class="primary-button">BUY TICKET</button></a>
                 </div>
             </div>
         </div>
@@ -19,6 +19,22 @@
 </script>
 
 <style scoped>
+.primary-button {
+    background-color: var(--silver-color);
+    width: auto;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--purple-color);
+    padding: 0 40px;
+}
+
+.primary-button:hover {
+    background-color: #e6e6e6;
+}
  h1{
         font-family: var(--primary-font);
         font-size: 100px;

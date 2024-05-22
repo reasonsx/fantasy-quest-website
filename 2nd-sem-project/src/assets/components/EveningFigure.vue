@@ -14,7 +14,7 @@
                         </svg>
 
                     </div>
-                    <RouterLink to="/day"><button class="button-purple"><p>Take me there!</p></button></RouterLink>
+                    <RouterLink to="/day"><button class="primary-button">TAKE ME THERE</button></RouterLink>
                 </div>
             </div>
         </div> 
@@ -25,6 +25,22 @@
 </script>
 
 <style scoped>
+.primary-button {
+    background-color: var(--purple-color);
+    width: auto;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--silver-color);
+    padding: 0 40px;
+}
+
+.primary-button:hover {
+    background-color: #853960;
+}
     h1{
         font-family: var(--primary-font);
         font-size: 100px;

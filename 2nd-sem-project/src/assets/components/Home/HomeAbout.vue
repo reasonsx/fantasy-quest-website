@@ -8,8 +8,7 @@
                     from two uniquely themed quests—Day Quest for families and Evening Quest for those seeking adventure
                     under the stars. Each quest is infused with challenges and a rich narrative designed to test your
                     bravery and wit. Join us for a day of mythical creatures, epic challenges, and heroic deeds. Whether
-                    with family or friends, come craft your story and become the hero Esbjerg needs. Register now and
-                    transform your world at Fantasy Quest Esbjerg!</p>
+                    with family or friends, come craft your story and become the hero Esbjerg needs.</p>
             </div>
             <div class="gold-torn-paper-top"></div>
         </div>
