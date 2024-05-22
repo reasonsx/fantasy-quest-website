@@ -4,7 +4,7 @@ import DayView from './views/DayView.vue'
 </script>
 
 <template>
-  <div class="home-svg-background">
+  <!-- <div class="home-svg-background">
     <div class="home-svg">
       <RouterLink to="/"><svg id="Group_203" data-name="Group 203" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80" height="81.875" viewBox="0 0 80 81.875">
   <defs>
@@ -59,7 +59,7 @@ import DayView from './views/DayView.vue'
       </ul>
     </nav>
 
-  </header>
+  </header> -->
 
 
   <body>
@@ -78,8 +78,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+h3 {
+  font-family: var(--primary-font);
+  font-size: 24px;
+  color: var(--gold-color);
+}
 
-.home-svg-background {
+p {
+  font-family: var(--secondary-font);
+  font-size: 24px;
+}
+/* .home-svg-background {
   display: flex;
   justify-content: center;
   z-index: 200;
@@ -95,24 +104,11 @@ body {
   position: absolute;
   z-index: 200;
   border-radius: 128px;
-  /* clip-path: polygon(0 32px,32px 0,calc(100% - 32px) 0,100% 32px,100% calc(100% - 32px),calc(100% - 32px) 100%,32px 100%,0 calc(100% - 32px)); */
-}
-
-h3 {
-  font-family: var(--primary-font);
-  font-size: 24px;
-  color: var(--gold-color);
-}
-
-p {
-  font-family: var(--secondary-font);
-  font-size: 24px;
 }
 
 header {
   display: flex;
   justify-content: center;
-  /* height: 96px; */
 }
 
 nav {
@@ -121,16 +117,14 @@ nav {
   align-items: center;
   width: 1120px;
   height: 64px;
-  /* background: var(--black-color); */
   background: var(--black-color);
   position: absolute;
   top: 0;
   z-index: 100;
   padding: 8px 0;
   mask: var(--mask);
-  /* clip-path: polygon(0 0,100% 0,100% calc(100% - 32px),calc(100% - 32px) 100%,32px 100%,0 calc(100% - 32px)); */
   @media screen and (max-width: 768px) {
-    width: 80%;
+    width: 75%;
     height: 180px;
 
   }
@@ -152,7 +146,7 @@ ul {
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 84px;
   }
 }
 
@@ -177,7 +171,7 @@ nav ul li p:hover {
   cursor: pointer;
   filter: brightness(90%);
   border-bottom: 2px solid var(--light-papirus);
-}
+} */
 
 button:hover {
   cursor: pointer;
