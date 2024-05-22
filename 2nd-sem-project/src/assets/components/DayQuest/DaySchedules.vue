@@ -8,6 +8,7 @@
                     adventure at 10:00 AM and overcome thrilling challenges. The quest concludes at 2:30 PM, leaving you
                     with awe-inspiring memories to cherish.
                     <br>
+                    <br>
                     <strong>Location:</strong> Torvet, Esbjerg
                     <br>
                     <strong>Date:</strong> 14 September 2024

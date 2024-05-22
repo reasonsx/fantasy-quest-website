@@ -6,19 +6,18 @@
                 <h1>Schedules</h1>
                 <p>
                     For those seeking a more mysterious and exhilarating experience, join our Evening Quest. 
-                    <br>
                     When darkness
                     falls, from 6:00 PM to 10:30 PM, the festival transforms into an enchanting realm filled with magic
                     and suspense.
                     <br>
                     <br>
-                    Location: Torvet, Esbjerg
+                    <strong>Location:</strong> Torvet, Esbjerg
                     <br>
-                    Date: 14 September 2024
+                    <strong>Date:</strong> 14 September 2024
                     <br>
-                    Price: 243.13 DKK
+                    <strong>Price:</strong> 243.13 DKK
                     <br>
-                    Time: 6:00 PM - 10:30 PM
+                    <strong>Time:</strong> 6:00 PM - 10:30 PM
                 </p>
                 <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
                     target="_blank"><button class="primary-button">BUY TICKET</button></a>
