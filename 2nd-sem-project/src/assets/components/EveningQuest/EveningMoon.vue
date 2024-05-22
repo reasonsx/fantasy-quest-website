@@ -31,9 +31,11 @@
 
 <style scoped>
 .centered-button {
+    @media screen and (max-width: 768px){
     display: flex;
     justify-content: center;
     width: auto;
+    }
 }
 .primary-button {
     background-color: var(--light-papirus);
