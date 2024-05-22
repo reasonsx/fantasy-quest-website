@@ -91,12 +91,13 @@ h2 {
 .primary-button:hover {
     background-color: var(--gold-hover);
 }
+
 .portals-background-container {
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 96px;
+    margin-top: 112px;
 }
 
 .portals-background-container h2 {

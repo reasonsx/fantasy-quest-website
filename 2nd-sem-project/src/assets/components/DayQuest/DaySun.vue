@@ -13,8 +13,8 @@
                     and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for
                     all ages.
                 </p>
-                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
-                    target="_blank"><button class="primary-button">BUY TICKET</button></a>
+                <div class="centered-button"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                    target="_blank"><button class="primary-button">BUY TICKET</button></a></div>
             </div>
         </div>
     </div>
@@ -25,6 +25,11 @@
 </script>
 
 <style scoped>
+.centered-button {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
 .primary-button {
     background-color: var(--gold-color);
     width: auto;

@@ -114,7 +114,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 80%;
         margin: 50px 0;
     }
     .card-grid{
@@ -131,6 +130,7 @@
         color: var(--light-papirus);
         position: relative;
         transform-style: preserve-3d;
+        cursor: pointer;
     }
     .front, .back {
   display: flex;
@@ -155,7 +155,7 @@
 }
     h1{
         font-family: var(--primary-font);
-        font-size: 100px;
+        font-size: 64px;
     }
     h3{
         font-family: var(--secondary-font);

@@ -19,8 +19,10 @@
                     <br>
                     <strong>Time:</strong> 6:00 PM - 10:30 PM
                 </p>
-                <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
-                    target="_blank"><button class="primary-button">BUY TICKET</button></a>
+                <div class="centered-button">
+                    <a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                    target="_blank">
+                    <button class="primary-button">BUY TICKET</button></a></div>
             </div>
             <div class="clock">
                 <svg width="551" height="545" viewBox="0 0 551 545" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -82,6 +84,11 @@
 </script>
 
 <style scoped>
+.centered-button {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
 .primary-button {
     background-color: var(--purple-color);
     width: auto;
