@@ -1,7 +1,7 @@
 <template>
     <div class="hero-container">
             <div class="hero-text">
-                <h1 style="text-align: center;">EVENING QUEST</h1>
+                <h1 id="welcome-text" style="text-align: center;">EVENING QUEST</h1>
                 <!-- <p style="text-align: center;">When twilight begins to descend over Esbjerg, the level of difficulty in the Evening Quest is turned up. Now you really have to think creatively and solve tasks that require both courage, cooperation and ingenuity in order for you to complete the quest and save Esbjerg. If you love solving puzzles and cracking codes, don't miss out on this ultimate experience. We send you and your friends on your ultimate adventure in Esbjerg's streets and alleys. Here you will have to collaborate and devise new solutions to complete the AftenQuest.</p> -->
         
             </div>
@@ -9,7 +9,40 @@
         </div>
 </template>
 
-<script setup>
+<script>
+export default {
+  // Called when the component is mounted to the DOM
+  mounted() {
+    // Calls the animateText method when the component is mounted
+    this.animateText();
+  },
+  methods: {
+    // Method to animate the text
+    animateText() {
+      // Text to be animated
+      const text = "EVENING QUEST";
+      // Get the element with the id 'hi-text'
+      const hiText = document.getElementById('welcome-text');
+      // Clear existing content before appending new content
+      hiText.innerHTML = '';
+
+      let index = 0;
+
+      // Set interval to append each letter of the text
+      const intervalId = setInterval(() => {
+        // Append the next letter of the text
+        hiText.innerHTML += text[index];
+        // Move to the next letter
+        index++;
+        // Check if animation is complete
+        if (index === text.length) {
+          // Stop the interval when animation is complete
+          clearInterval(intervalId);
+        }
+      }, 100); // is the speed of typing here (milliseconds)
+    }
+  }
+};
 </script>
 
 <style scoped>

@@ -56,7 +56,12 @@ nav {
   position: fixed;
   top: 0;
   z-index: 100;
-
+@media screen and (max-width: 768px){
+  width: 100%;
+  mask: none;
+  height: 96px;
+  
+}
 }
 ul {
   display: flex;
@@ -65,6 +70,9 @@ ul {
   width: 100%;
   padding: 0;
   margin: 0;
+  @media screen and (max-width: 768px){
+    flex-direction: column;
+  }
 }
 li {
   list-style-type: none;

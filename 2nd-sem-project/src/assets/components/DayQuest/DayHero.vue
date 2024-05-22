@@ -1,14 +1,47 @@
 <template>
     <div class="hero-container">
             <div class="hero-text">
-                <h1 style="text-align: center;">DAY QUEST</h1>
+                <h1 id="welcome-text" style="text-align: center;">DAY QUEST</h1>
         
             </div>
             <div class="red-torn-paper-top" style="position: absolute; bottom: 0;"></div>
         </div>
 </template>
 
-<script setup>
+<script>
+export default {
+  // Called when the component is mounted to the DOM
+  mounted() {
+    // Calls the animateText method when the component is mounted
+    this.animateText();
+  },
+  methods: {
+    // Method to animate the text
+    animateText() {
+      // Text to be animated
+      const text = "DAY QUEST";
+      // Get the element with the id 'hi-text'
+      const hiText = document.getElementById('welcome-text');
+      // Clear existing content before appending new content
+      hiText.innerHTML = '';
+
+      let index = 0;
+
+      // Set interval to append each letter of the text
+      const intervalId = setInterval(() => {
+        // Append the next letter of the text
+        hiText.innerHTML += text[index];
+        // Move to the next letter
+        index++;
+        // Check if animation is complete
+        if (index === text.length) {
+          // Stop the interval when animation is complete
+          clearInterval(intervalId);
+        }
+      }, 100); // is the speed of typing here (milliseconds)
+    }
+  }
+};
 </script>
 
 <style scoped>

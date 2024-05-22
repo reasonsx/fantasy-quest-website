@@ -171,23 +171,24 @@
             flex-direction: column;
         }
         .card-content{
-            flex-direction: column;
-            margin:  60px 0;
-            width: 360px;
-        }
-        .card{
-            height: 250px;
-        }
-        .card-grid{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-        h1{
-            font-size: 48px;
-        }
-        p{
-            font-size: 16px;
-        }
+          flex-direction: column;
+          margin:  60px 0;
+          width: 360px;
+      }
+      .card{
+          width: 360px;
+          height: 360px;
+      }
+      .card-grid{
+          grid-template-columns: repeat(1, 1fr);
+          gap: 30px;
+      }
+      h1{
+          font-size: 48px;
+      }
+      p{
+          font-size: 16px;
+      }
     }
 </style>
 
