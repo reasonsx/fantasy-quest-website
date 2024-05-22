@@ -306,7 +306,7 @@ h2 {
 .portal-box {
     position: relative;
     width: 352px;
-    height: 600px;
+    height: 550px;
     background-color: var(--gold-color);
     border-radius: 176px 176px 0 0;
     /* border: 12px solid var(--gold-color); */
