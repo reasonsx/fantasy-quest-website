@@ -16,7 +16,6 @@ import DayView from './views/DayView.vue'
   <body>
     <RouterView />
 
-   
   </body>
 
 
@@ -56,9 +55,9 @@ nav {
   width: 80%;
   height: 64px;
   /* background: var(--black-color); */
-  background: var(--black-color);
+  background: rgba(40, 42, 46, 0.75);
   mask: var(--mask);
-  position:absolute;
+  position: fixed;
   top: 0;
   z-index: 100;
 

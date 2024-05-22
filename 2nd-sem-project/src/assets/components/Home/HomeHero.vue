@@ -1,7 +1,7 @@
 <template>
     <div class="portals-background-container">
             <!-- <h2>CHOOSE YOUR ADVENTURE</h2> -->
-            <h2>CHOOSE YOUR ADVENTURE</h2>
+            <h2 id="welcome-text">CHOOSE YOUR ADVENTURE</h2>
             <div class="portals-container">
                 <div class="day-portal-container">
                     <RouterLink to="/day">
@@ -21,12 +21,46 @@
         </div>
 </template>
 
-<script setup>
+<script>
+export default {
+  // Called when the component is mounted to the DOM
+  mounted() {
+    // Calls the animateText method when the component is mounted
+    this.animateText();
+  },
+  methods: {
+    // Method to animate the text
+    animateText() {
+      // Text to be animated
+      const text = "CHOOSE YOUR ADVENTURE";
+      // Get the element with the id 'hi-text'
+      const hiText = document.getElementById('welcome-text');
+      // Clear existing content before appending new content
+      hiText.innerHTML = '';
 
+      let index = 0;
+
+      // Set interval to append each letter of the text
+      const intervalId = setInterval(() => {
+        // Append the next letter of the text
+        hiText.innerHTML += text[index];
+        // Move to the next letter
+        index++;
+        // Check if animation is complete
+        if (index === text.length) {
+          // Stop the interval when animation is complete
+          clearInterval(intervalId);
+        }
+      }, 100); // is the speed of typing here (milliseconds)
+    }
+  }
+};
 </script>
 
 <style scoped>
-
+#welcome-text {
+    height: 100px;
+}
 .centered-button {
     display: flex;
     justify-content: center;

@@ -34,7 +34,7 @@
     margin-top: 24px;
     letter-spacing: 2px;
     font-weight: 600;
-    color: var(--silver-color);
+    color: var(--light-papirus);
     padding: 0 40px;
 }
 

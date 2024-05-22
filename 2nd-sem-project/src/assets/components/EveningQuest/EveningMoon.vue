@@ -20,7 +20,7 @@
 
 <style scoped>
 .primary-button {
-    background-color: var(--silver-color);
+    background-color: var(--light-papirus);
     width: auto;
     height: 48px;
     border-radius: 64px;
