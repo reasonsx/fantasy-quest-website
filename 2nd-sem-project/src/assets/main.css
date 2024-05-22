@@ -3,6 +3,7 @@
 
 :root {
     --gold-color: #A3883C;
+    --gold-hover: #c8a84b;
     --silver-color: #c0c0c0;
     --black-color: #282A2E;
     --light-papirus: #FFF6E9;
@@ -11,6 +12,7 @@
     --red-color: #8F270D;
     --primary-font: 'Exocet', sans-serif;
     --secondary-font: 'Darker Grotesque', sans-serif;
+    --mask: radial-gradient(32px at 32px 100%, #0000 98%, #000) -32px;
 }
 /* ===== Scrollbar CSS ===== */
   /* Firefox */
