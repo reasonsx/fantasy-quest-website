@@ -1,11 +1,11 @@
 <script setup>
 import Footer from '../assets/components/Footer.vue'
-import EveningHero from '../assets/components/EveningHero.vue'
-import EveningMoon from '../assets/components/EveningMoon.vue'
-import EveningSchedules from '../assets/components/EveningSchedules.vue'
-import EveningCards from '../assets/components/EveningCards.vue'
-import EveningFigure from '../assets/components/EveningFigure.vue'
-import EveningMap from '../assets/components/EveningMap.vue'
+import EveningHero from '../assets/components/EveningQuest/EveningHero.vue'
+import EveningMoon from '../assets/components/EveningQuest/EveningMoon.vue'
+import EveningSchedules from '../assets/components/EveningQuest/EveningSchedules.vue'
+import EveningCards from '../assets/components/EveningQuest/EveningCards.vue'
+import EveningFigure from '../assets/components/EveningQuest/EveningFigure.vue'
+import EveningMap from '../assets/components/EveningQuest/EveningMap.vue'
 </script>
 
 <template>

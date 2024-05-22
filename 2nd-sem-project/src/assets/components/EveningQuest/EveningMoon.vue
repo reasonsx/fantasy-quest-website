@@ -4,7 +4,7 @@
     <div class="moon-container">
             <div class="moon-description">
                 <div class="moon-svg">
-                    <img src="../img/moon.svg" alt="Moon">
+                    <img src="../../img/moon.svg" alt="Moon">
                 </div>
                 <div class="moon-text">
                     <h1>Lorem ipsum</h1>
