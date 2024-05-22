@@ -79,8 +79,12 @@
 
 .discover-box h3 {
     color: var(--gold-color);
-    margin: 24px 0;
+    /* margin: 24px 0; */
     text-align: center;
+    font-family: var(--secondary-font);
+    font-size: 32px;
+    font-weight: 800;
+    padding: 16px 16px;
 }
 
 .discover-box-top {

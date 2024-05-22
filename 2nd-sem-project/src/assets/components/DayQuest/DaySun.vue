@@ -8,7 +8,7 @@
                     will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace,
                     and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for
                     all ages.</p>
-                <button class="btn">Buy Ticket</button>
+                <button class="primary-button">BUY TICKET</button>
             </div>
         </div>
 </template>
@@ -18,6 +18,22 @@
 </script>
 
 <style scoped>
+.primary-button {
+    background-color: var(--gold-color);
+    width: auto;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--light-papirus);
+    padding: 0 40px;
+}
+
+.primary-button:hover {
+    background-color: var(--gold-hover);
+}
 h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 40px;
@@ -26,57 +42,6 @@ h2 {
 
 }
 
-
-
-button {
-    border-radius: 30px;
-    background-color: #A3883C;
-    border: none;
-    color: #FFF6E9;
-    text-align: start;
-    font-size: 25px;
-    font-family: Darker Grotesque;
-    padding: 15px;
-    padding-bottom: 17px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-top: 36px;
-
-
-    @media screen and (max-width: 768px) {
-        width: 170px;
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-}
-
-button {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-button:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 14px;
-    right: -20px;
-    transition: 0.5s;
-}
-
-button:hover {
-    padding-right: 24px;
-    padding-left: 30px;
-}
-
-button:hover:after {
-    opacity: 1;
-    right: 30px;
-}
     .first-container h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 70px;
@@ -120,7 +85,7 @@ button:hover:after {
 .text-section {
     color: #FFF6E9;
     width: 500px;
-    height: 400px;
+    height: auto;
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;

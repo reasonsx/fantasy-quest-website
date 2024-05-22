@@ -32,18 +32,19 @@
     justify-content: center;
 }
 
-
 .primary-button {
     background-color: var(--gold-color);
-    width: 180px;
+    width: auto;
     height: 48px;
     border-radius: 64px;
     border: none;
     margin-top: 24px;
     letter-spacing: 2px;
     font-weight: 600;
-    color: var(--black-color);
+    color: var(--light-papirus);
+    padding: 0 40px;
 }
+
 .primary-button:hover {
     background-color: var(--gold-hover);
 }

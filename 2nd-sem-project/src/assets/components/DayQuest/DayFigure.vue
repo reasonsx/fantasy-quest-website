@@ -8,7 +8,7 @@
                 <div class="figure-text">"Brave enough to confront the night's horrors? <br> Embark on the Evening
                     Quest."</div>
                 <img src="../../img/Malice.png" class="figure" alt="Figure">
-                <button class="btn">Take me there</button>
+                <button class="primary-button">TAKE ME THERE</button>
             </div>
         </div>
         <div class="beige-torn-paper-bottom"></div>
@@ -19,6 +19,22 @@
 </script>
 
 <style  scoped>
+.primary-button {
+    background-color: var(--gold-color);
+    width: auto;
+    height: 48px;
+    border-radius: 64px;
+    border: none;
+    margin-top: 24px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    color: var(--light-papirus);
+    padding: 0 40px;
+}
+
+.primary-button:hover {
+    background-color: var(--gold-hover);
+}
 h2 {
     font-family: 'Exocet', sans-serif;
     font-size: 40px;
@@ -26,59 +42,6 @@ h2 {
     margin-bottom: 10px;
 
 }
-
-
-
-button {
-    border-radius: 30px;
-    background-color: #A3883C;
-    border: none;
-    color: #FFF6E9;
-    text-align: start;
-    font-size: 25px;
-    font-family: Darker Grotesque;
-    padding: 15px;
-    padding-bottom: 17px;
-    width: 200px;
-    transition: all 0.5s;
-    cursor: pointer;
-    margin-top: 36px;
-
-
-    @media screen and (max-width: 768px) {
-        width: 170px;
-        font-size: 20px;
-        margin-top: 10px;
-        margin-bottom: 30px;
-    }
-}
-
-button {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    transition: 0.5s;
-}
-
-button:after {
-    content: '»';
-    position: absolute;
-    opacity: 0;
-    top: 14px;
-    right: -20px;
-    transition: 0.5s;
-}
-
-button:hover {
-    padding-right: 24px;
-    padding-left: 30px;
-}
-
-button:hover:after {
-    opacity: 1;
-    right: 30px;
-}
-
 .fourth-section {
     display: flex;
     justify-content: end;
@@ -101,15 +64,7 @@ button:hover:after {
 
 }
 
-.gold-torn-paper-bottom {
-    display: flex;
-    margin-top: -50px;
-    z-index: 1;
-}
 
-.beige-torn-paper-bottom {
-    margin-top: -70px;
-}
 
 .arrow {
     margin-top: -100px;
