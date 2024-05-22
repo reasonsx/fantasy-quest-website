@@ -43,21 +43,11 @@
 }
     h1{
         font-family: var(--primary-font);
-        font-size: 100px;
+        font-size: 64px;
     }
     p{
         font-family: var(--secondary-font);
-        font-size: 20px;
-    }
-    .button-purple {
-        background-color: #5F2945;
-        color: var(--light-papirus);
-        width: auto;
-        padding: 10px 40px;
-        height: 48px;
-        border-radius: 64px;
-        border: none;
-        margin-top: 24px;
+        font-size: 24px;
     }
     .question-part{
         width: 30%;
@@ -93,9 +83,7 @@
         h1{
             font-size: 48px;
         }
-        p{
-            font-size: 16px;
-        }
+       
         .nothing-here{
             display: none;
         }

@@ -58,6 +58,15 @@ export default {
 </script>
 
 <style scoped>
+h2 {
+    font-family: var(--primary-font);
+    font-size: 64px;
+    color: var(--gold-color);
+    @media screen and (max-width: 768px){
+        font-size: 48px;
+        
+    }
+}
 #welcome-text {
     height: 100px;
 }

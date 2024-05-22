@@ -18,7 +18,7 @@
 
 <style scoped>
 .primary-button {
-    background-color: var(--purple-color);
+    background-color: var(--black-color);
     width: auto;
     height: 48px;
     border-radius: 64px;
@@ -31,16 +31,22 @@
 }
 
 .primary-button:hover {
-    background-color: #853960;
+    background-color: #494c54;
 }
-h1{
-        font-family: var(--primary-font);
-        font-size: 100px;
-    }
-    p{
-        font-family: var(--secondary-font);
-        font-size: 20px;
-    }
+h1 {
+    font-family: var(--primary-font);
+    font-size: 64px;
+    color: var(--black-color);
+    text-align: left;
+    margin: 0 0 24px 0;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    color: var(--light-papirus);
+    text-align: left;
+}
     .button-purple {
         background-color: #5F2945;
         color: var(--light-papirus);
@@ -74,15 +80,13 @@ h1{
         width: auto;
 
         @media screen and (max-width: 768px){
-            flex-direction: column; /* Stack elements vertically in a single column */
-            margin-top: 20px;
+            flex-direction: column;
             margin-bottom: 20px;
         }
     }
     iframe{
         width: 1120px;
         height: 560px;
-        margin-right: 0px;
 
         @media screen and (max-width: 768px){
             width: 360px;
@@ -93,9 +97,7 @@ h1{
         h1{
             font-size: 48px;
         }
-        p{
-            font-size: 16px;
-        }
+       
         .map-container{
             flex-direction: column;
             
@@ -103,10 +105,7 @@ h1{
         .map-content{
             width: 360px;
             margin-bottom: 60px;
-            h1{
-                margin-bottom: 30px;
-            
-            }
+           
         }
         .map-section{
             flex-direction: column;

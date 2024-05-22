@@ -15,7 +15,8 @@
 <style scoped>
  h1{
         font-family: var(--primary-font);
-        font-size: 100px;
+        font-size: 80px;
+        color: var(--light-papirus);
     }
     p{
         font-family: var(--secondary-font);
