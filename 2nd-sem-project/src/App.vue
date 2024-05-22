@@ -170,7 +170,7 @@ button:hover {
 
 .red-torn-paper-bottom{
   display: flex;
-  height: 120px;
+  height: 140px;
   width: 100%;
   background: url('../src/assets/img/bottom-red-torn-paper.svg') no-repeat;
   background-size: cover;

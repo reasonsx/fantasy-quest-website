@@ -2,7 +2,6 @@
     <div class="hero-container">
             <div class="hero-text">
                 <h1 style="text-align: center;">DAY QUEST</h1>
-                <p style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         
             </div>
             <div class="red-torn-paper-top" style="position: absolute; bottom: 0;"></div>
@@ -15,7 +14,7 @@
 <style scoped>
  h1{
         font-family: var(--primary-font);
-        font-size: 100px;
+        font-size: 80px;
     }
     p{
         font-family: var(--secondary-font);

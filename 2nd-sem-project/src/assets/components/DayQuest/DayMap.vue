@@ -1,4 +1,5 @@
 <template>
+    <!-- <div class="light-torn-paper-top" style="background-color: var(--dark-papirus);"></div> -->
     <div class="map-container">
             <div class="map-content">
                 <h1>Starting point</h1>
@@ -7,8 +8,8 @@
                 </div>
                 <RouterLink to="/"><button class="primary-button">GO BACK TO HOME PAGE</button></RouterLink>
             </div>
+            <div class="red-torn-paper-top"></div>
         </div>
-        <div class="red-torn-paper-top"></div>
 </template>
 
 <script setup>
@@ -30,16 +31,23 @@
 }
 
 .primary-button:hover {
-    background-color: var(--gold-color);
+    background-color: var(--gold-hover);
 }
-h1{
-        font-family: var(--primary-font);
-        font-size: 100px;
-    }
-    p{
-        font-family: var(--secondary-font);
-        font-size: 20px;
-    }
+h1 {
+    font-family: var(--primary-font);
+    font-size: 64px;
+    color: var(--gold-color);
+    text-align: left;
+    margin: 0 0 24px 0;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    color: var(--light-papirus);
+    text-align: left;
+}
+
     .map-container{
         display: flex;
         flex-direction: column;
@@ -47,7 +55,7 @@ h1{
         align-items: center;
         width: 100%;
         background-color: var(--light-papirus);
-        color: var(--gold-color);
+        color: var(--purple-color);
     }
     .map-content{
         display: flex;
@@ -63,15 +71,13 @@ h1{
         width: auto;
 
         @media screen and (max-width: 768px){
-            flex-direction: column; /* Stack elements vertically in a single column */
-            margin-top: 20px;
+            flex-direction: column;
             margin-bottom: 20px;
         }
     }
     iframe{
         width: 1120px;
         height: 560px;
-        margin-right: 0px;
 
         @media screen and (max-width: 768px){
             width: 360px;
@@ -82,9 +88,7 @@ h1{
         h1{
             font-size: 48px;
         }
-        p{
-            font-size: 16px;
-        }
+       
         .map-container{
             flex-direction: column;
             
@@ -92,10 +96,7 @@ h1{
         .map-content{
             width: 360px;
             margin-bottom: 60px;
-            h1{
-                margin-bottom: 30px;
-            
-            }
+           
         }
         .map-section{
             flex-direction: column;
