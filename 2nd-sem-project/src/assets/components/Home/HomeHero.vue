@@ -343,8 +343,18 @@ a {
 .portal-box svg {
     width: auto;
     /* height: 600px; */
+  
     @media screen and (max-width: 768px) {
         height: 120px;
     }
+}
+.portal-box:hover svg {
+    cursor: pointer;
+    scale: 1.1;
+    transition: all 0.5s ease;
+}
+.portal-box:not(:hover) svg {
+    scale: 1;
+    transition: all 0.5s ease;
 }
 </style>
