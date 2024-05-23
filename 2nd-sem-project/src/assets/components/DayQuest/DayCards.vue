@@ -105,7 +105,7 @@
         width: 100%;
         background-color: var(--gold-color);
         h1{
-            color: var(--black-color);
+            color: var(--light-papirus);
             margin-bottom: 50px;
         }
     }

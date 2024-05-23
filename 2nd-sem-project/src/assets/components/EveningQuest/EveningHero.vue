@@ -190,6 +190,7 @@ nav ul li p:hover {
         font-family: var(--primary-font);
         font-size: 80px;
         margin-top: 16px;
+        color: var(--light-papirus);
     }
     p{
         font-family: var(--secondary-font);

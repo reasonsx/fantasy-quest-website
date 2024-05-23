@@ -126,7 +126,6 @@ export default {
 .home-svg-background {
   display: flex;
   justify-content: center;
-  z-index: 200;
 }
 
 .home-svg {
@@ -254,6 +253,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     margin-top: 112px;
+    /* background-image: url(../../img/home-hero.jpg); */
     @media screen and (max-width: 768px){
         margin-top: 200px;
         

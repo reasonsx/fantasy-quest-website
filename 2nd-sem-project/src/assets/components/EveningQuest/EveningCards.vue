@@ -105,7 +105,7 @@ export default {
       width: 100%;
       background-color: var(--silver-color);
       h1{
-          color: var(--black-color);
+          color: var(--purple-color);
           margin-bottom: 50px;
       }
   }
