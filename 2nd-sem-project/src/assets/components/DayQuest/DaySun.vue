@@ -1,23 +1,37 @@
+
 <template>
-    <div class="first-container">
-            <img src="../../img/sun-svg.svg" class="sun-section" alt="Sun">
-            <div class="text-section">
-                <h2>Day Quest</h2>
+    <div class="sun-container">
+        <div class="sun-description">
+            <div class="sun-svg">
+                <img src="../../img/sun-svg.svg" alt="Sun">
+            </div>
+            <div class="sun-text">
+                <h1>Fun for everyone</h1>
                 <p>Day Quest is a fun and interactive way to explore the city of Esbjerg. You will be given a map and a
                     list of tasks to complete. The tasks will take you to different locations around the city, where you
                     will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace,
                     and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for
-                    all ages.</p>
-                <button class="primary-button">BUY TICKET</button>
+                    all ages.
+                </p>
+                <div class="centered-button"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
+                    target="_blank"><button class="primary-button">BUY TICKET</button></a></div>
             </div>
         </div>
+    </div>
+    <div class="red-torn-paper-bottom"></div>
 </template>
 
 <script setup>
-
 </script>
 
 <style scoped>
+.centered-button {
+    @media screen and (max-width: 768px){
+    display: flex;
+    justify-content: center;
+    width: auto;
+    }
+}
 .primary-button {
     background-color: var(--gold-color);
     width: auto;
@@ -34,93 +48,76 @@
 .primary-button:hover {
     background-color: var(--gold-hover);
 }
-h2 {
-    font-family: 'Exocet', sans-serif;
-    font-size: 40px;
-    color: #A3883C;
-    margin-bottom: 10px;
 
+h1 {
+    font-family: var(--primary-font);
+    font-size: 64px;
+    color: var(--light-papirus);
+    text-align: left;
+    margin: 0 0 24px 0;
 }
 
-    .first-container h2 {
-    font-family: 'Exocet', sans-serif;
-    font-size: 70px;
-    text-align: center;
-    margin-top: 30px;
-    color: #FFF6E9;
-
-    @media (max-width: 768px) {
-        font-size: 40px;
-        text-align: start;
-    }
+p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+    color: var(--light-papirus);
+    text-align: left;
 }
-.first-container {
-    background-color: #8F270D;
+
+.sun-container {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    @media screen and (max-width: 768px) {
-        margin-top: -40px;
-        margin-bottom: 0px;
-        z-index: 1;
-    }
+    flex-direction: column;
+    background-color: var(--red-color);
+    color: var(--light-papirus);
 }
 
-.sun-section {
-    width: 400px;
-    height: 400px;
-    margin-right: 150px;
-    margin-left: 0px;
-
-    @media screen and (max-width: 768px) {
-        width: 50%;
-        margin-right: 0;
-        margin-left: 0;
-        height: auto;
-    }
-}
-
-.text-section {
-    color: #FFF6E9;
-    width: 500px;
-    height: auto;
+.sun-description {
+    width: 80%;
     display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    flex-direction: row;
+    margin: 50px 0 0 0;
+}
+
+.sun-text {
+    margin-left: 50px;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 0px;
-    margin-left: 150px;
-    font-size: 50px;
+    height: 100%;
+}
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        margin-right: 10px;
-        margin-left: 10px;
-        height: auto;
-        font-size: 10px;
+@media screen and (max-width: 768px) {
+    .sun-container {
+        flex-direction: column;
+
+
+    }
+
+    .sun-description {
+        flex-direction: column;
+        margin: 0 0 50px 0;
+        width: 360px;
+    }
+
+    .sun-text {
+        margin-left: 0;
+    }
+
+    .sun-svg {
         display: flex;
         justify-content: center;
-        align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-}
-.first-container p {
-    font-family: Darker Grotesque;
-    font-size: 22px;
-    color: var(--light-papirus);
-    margin-bottom: 20px;
+        margin-bottom: 50px;
 
-    @media screen and (max-width: 768px) {
-        width: 100%;
-        height: auto;
-        font-size: 15px;
-        padding-left: 10px;
-        padding-right: 10px;
+        img {
+            width: 360px;
+        }
     }
 
+    h1 {
+        font-size: 48px;
+    }
 }
 </style>

@@ -11,6 +11,7 @@ import HomeFaq from '../assets/components/Home/HomeFaq.vue';
 <template>
 
     <body>
+        
         <HomeHero />
         <HomeAbout />
         <HomeCharacters />

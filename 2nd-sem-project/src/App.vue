@@ -4,23 +4,9 @@ import DayView from './views/DayView.vue'
 </script>
 
 <template>
-  <header>
-    <nav>
-      <ul>
-        <li><RouterLink to="/day"><p>DAY QUEST</p></RouterLink></li>
-        <li><RouterLink to="/evening"><p>EVENING QUEST</p></RouterLink></li>
-      </ul>
-    </nav>
-  </header>
-
   <body>
     <RouterView />
-
   </body>
-
-
-
-  
 </template>
 
 <style>
@@ -29,66 +15,17 @@ body {
   display: flex;
   flex-direction: column;
 }
-h2 {
-    font-family: var(--primary-font);
-    font-size: 48px;
-    color: var(--gold-color);
-}
 h3 {
-    font-family: var(--primary-font);
-    font-size: 24px;
-    color: var(--gold-color);
+  font-family: var(--primary-font);
+  font-size: 24px;
+  color: var(--gold-color);
 }
+
 p {
   font-family: var(--secondary-font);
   font-size: 24px;
 }
-header {
-  display: flex;
-  justify-content: center;
-  /* height: 96px; */
-}
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 80%;
-  height: 64px;
-  /* background: var(--black-color); */
-  background: rgba(40, 42, 46, 0.75);
-  mask: var(--mask);
-  position: fixed;
-  top: 0;
-  z-index: 100;
 
-}
-ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-nav a {
-text-decoration: none;
-}
-nav ul li p {
-  color: var(--light-papirus);
-    font-family: var(--secondary-font);
-    font-size: 32px;
-    font-weight: 600;
-}
-nav ul li p:hover {
-  cursor: pointer;
-  filter: brightness(90%);
-  border-bottom: 2px solid var(--light-papirus);
-}
 button:hover {
   cursor: pointer;
   filter: brightness(90%);
@@ -142,21 +79,24 @@ button:hover {
   background: url('../src/assets/img/grey-torn-paper-bottom-svg.svg') no-repeat;
   background-size: cover;
 }
-.light-torn-paper-top { 
+
+.light-torn-paper-top {
   display: flex;
   height: 120px;
   width: 100%;
   background: url('../src/assets/img/light-torn-paper-top-svg.svg') no-repeat;
   background-size: cover;
 }
-.purple-torn-paper-top { 
+
+.purple-torn-paper-top {
   display: flex;
   height: 120px;
   width: 100%;
   background: url('../src/assets/img/purple-torn-paper-top-svg.svg') no-repeat;
   background-size: cover;
 }
-.purple-torn-paper-bottom { 
+
+.purple-torn-paper-bottom {
   display: flex;
   height: 120px;
   width: 100%;
@@ -164,7 +104,7 @@ button:hover {
   background-size: cover;
 }
 
-.red-torn-paper-top{
+.red-torn-paper-top {
   display: flex;
   height: 80px;
   width: 100%;
@@ -172,23 +112,24 @@ button:hover {
   background-size: cover;
 }
 
-.red-torn-paper-bottom{
+.red-torn-paper-bottom {
   display: flex;
-  height: 120px;
+  height: 140px;
   width: 100%;
   background: url('../src/assets/img/bottom-red-torn-paper.svg') no-repeat;
   background-size: cover;
 }
 
 
-.silver-torn-paper-top { 
+.silver-torn-paper-top {
   display: flex;
   height: 120px;
   width: 100%;
   background: url('../src/assets/img/silver-torn-paper-top.svg') no-repeat;
   background-size: cover;
 }
-.silver-torn-paper-bottom { 
+
+.silver-torn-paper-bottom {
   display: flex;
   height: 120px;
   width: 100%;
@@ -204,5 +145,4 @@ button:hover {
   width: 30px;
   height: 30px;
 }
-
 </style>

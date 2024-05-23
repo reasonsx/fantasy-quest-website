@@ -18,6 +18,15 @@
 
 </script>
 <style scoped>
+h2 {
+    font-family: var(--primary-font);
+    font-size: 48px;
+    color: var(--gold-color);
+    @media screen and (max-width: 768px){
+        font-size: 32px;
+        
+    }
+}
 .about-background-container {
     width: 100%;
     height: auto;
@@ -44,7 +53,7 @@
 }
 
 .about-container h2 {
-    color: #FFF6E9;
+    color: var(--light-papirus);
     margin: 24px 0;
     text-align: left;
     width: 100%;
@@ -52,7 +61,7 @@
 }
 
 .about-container p {
-    color: #FFF6E9;
+    color: var(--light-papirus);
     font-size: 24px;
     text-align: left;
     width: 1120px;

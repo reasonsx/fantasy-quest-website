@@ -31,6 +31,14 @@
 <script setup>
 </script>
 <style scoped>
+h2 {
+    font-family: var(--primary-font);
+    font-size: 48px;
+    color: var(--gold-color);
+    @media screen and (max-width: 768px) {
+        font-size: 32px;
+    }
+}
 .centered-button {
     display: flex;
     justify-content: center;
