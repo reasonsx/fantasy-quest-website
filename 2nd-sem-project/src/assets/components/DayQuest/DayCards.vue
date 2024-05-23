@@ -132,6 +132,7 @@
         transform-style: preserve-3d;
         cursor: pointer;
     }
+
     .front, .back {
   display: flex;
   justify-content: center;
