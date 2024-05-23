@@ -1,14 +1,22 @@
 <template>
-    <div class="gold-torn-paper-bottom"></div>
-        <div class="fourth-section">
-            <div class="line-arrow">
-                <img src="../../img/arrow.svg" class="arrow" alt="Arrow">
-            </div>
-            <div class="figure-container">
-                <div class="figure-text">"Brave enough to confront the night's horrors? <br> Embark on the Evening
-                    Quest."</div>
-                <img src="../../img/Malice.png" class="figure" alt="Figure">
-                <button class="primary-button">TAKE ME THERE</button>
+    <div class="beige-torn-paper-top" style="background-color: var(--gold-color);" </div>
+        <div class="figure-container">
+            
+            <div class="figure-content">
+                <!-- <img class="arrow" src="../../img/silver-arrow.svg" alt=""> -->
+                <!-- <div class="question-part">
+                    <p>Brave enough to confront the night's horrors? <br>
+                        Embark on the Evening Quest.</p>
+                </div> -->
+                <div class="figure-part">
+                    <div class="question-part">
+                    <p>Brave enough to confront the night's horrors? <br>
+                        Embark on the Evening Quest.</p>
+                </div>
+                    <div class="figure-svg"><img src="../../img/figure-day.svg" alt="">
+                    </div>
+                    <div class="centered-button"><a href="/evening"><button class="primary-button">TAKE ME THERE</button></a></div>
+                </div>
             </div>
         </div>
         <div class="beige-torn-paper-bottom"></div>
@@ -18,9 +26,17 @@
 
 </script>
 
-<style  scoped>
+<style scoped>
+.centered-button {
+    @media screen and (max-width: 768px) {
+        display: flex;
+        justify-content: center;
+        width: auto;
+    }
+}
+
 .primary-button {
-    background-color: var(--gold-color);
+    background-color: var(--red-color);
     width: auto;
     height: 48px;
     border-radius: 64px;
@@ -33,95 +49,97 @@
 }
 
 .primary-button:hover {
-    background-color: var(--gold-hover);
+    background-color: #b53615;
 }
-h2 {
-    font-family: 'Exocet', sans-serif;
-    font-size: 40px;
-    color: #A3883C;
-    margin-bottom: 10px;
 
+h1 {
+    font-family: var(--primary-font);
+    font-size: 64px;
 }
-.fourth-section {
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 24px;
+}
+
+.question-part {
+    /* width: 30%; */
     display: flex;
-    justify-content: end;
-    align-items: end;
-    background-color: #DFCBAF;
-    margin-top: -50px;
+    background-color: var(--red-color);
+    border-radius: 30px;
+    padding: 20px;
+    /* margin-right: 40px; */
+    margin-bottom: 24px;
+    @media screen and (max-width: 768px){
+        width: 360px;
+        margin: 0 0 32px 0;
+        
+    }
 
 }
-
-/* Arrow */
-.line-arrow {
-    margin-right: 0px;
-    margin-left: 150px;
-}
-
-.arrow {
-    margin-right: 500px;
-    margin-left: 180px;
-    margin-top: -100px;
-
-}
-
-
-
-.arrow {
-    margin-top: -100px;
-    margin-right: 0px;
-    margin-left: 150px;
-}
-
-.figure-container {
-    background-color: #DFCBAF;
+.figure-part {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    margin-right: 150px;
-    margin-left: 0px;
 
 }
-
-.figure-text {
-    font-family: Darker Grotesque;
-    color: #FFF6E9;
-    border-radius: 15px;
-    font-size: 20px;
-    padding: 10px;
-    background-color: #8F270D;
-    width: 300px;
-    margin-right: 350px;
-    margin-left: 0px;
-    margin-bottom: -30px;
-    z-index: 1;
+.figure-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--dark-papirus);
+    color: var(--light-papirus);
 }
-.figure {
-    width: 300px;
-    height: 400px;
-    margin-right: 250px;
-
+.arrow {
+    @media screen and (max-width: 768px){
+        display: none;
+        
+    }
+}
+.figure-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
     @media screen and (max-width: 768px) {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: 150px;
-        height: 200px;
+        flex-direction: column;
+        width: 100%;
+        
     }
 }
 
-.figure-container .btn {
-    margin-top: -10px;
-    margin-right: 150px;
-    margin-left: 0px;
-    width: 250px;
+.nothing-here {
+    width: 40%;
+}
 
-    @media screen and (max-width: 768px) {
-        margin-left: 20px;
-        margin-right: 20px;
-        width: auto;
-        margin-top: 10px;
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .nothing-here {
+        display: none;
+    }
+
+    .figure-content {
+        margin: 0 0 60px 0;
+        width: 360px;
+    }
+
+    .figure-svg {
+        svg {
+            width: 180PX;
+
+        }
+    }
+
+
+    .figure-part {
+        width: 50%;
     }
 }
 </style>
