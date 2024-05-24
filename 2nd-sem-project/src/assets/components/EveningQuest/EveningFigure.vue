@@ -10,8 +10,8 @@
                 </div> -->
                 <div class="figure-part">
                     <div class="question-part">
-                    <p>Maybe the night's horrorsa are not for you? <br>
-                        Embark on the Day Quest.</p>
+                    <p>Maybe the night's horrors are not for you? <br>
+                        Embark on the Day Quest!</p>
                 </div>
                     <div class="figure-svg"><img src="../../img/figure-evening.svg" alt="">
                     </div>
