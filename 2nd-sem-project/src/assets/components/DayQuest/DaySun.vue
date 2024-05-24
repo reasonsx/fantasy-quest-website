@@ -7,11 +7,7 @@
             </div>
             <div class="sun-text">
                 <h1>Fun for everyone</h1>
-                <p>Day Quest is a fun and interactive way to explore the city of Esbjerg. You will be given a map and a
-                    list of tasks to complete. The tasks will take you to different locations around the city, where you
-                    will learn about the history and culture of Esbjerg. You can complete the tasks at your own pace,
-                    and there is no time limit. Day Quest is a great way to spend a day in Esbjerg, and is suitable for
-                    all ages.
+                <p>The family edition of Fantasy Quest Esbjerg is an experience run for the whole family, with an emphasis on experience. Because it is not a classic race. It's about living into another world, a magical story, where you are on a "quest" together - a mission, a task, a hunt. Here you meet magical creatures who set you some tasks and challenges along the way towards the goal, which you must solve together to complete the Quest. The degree of difficulty has been lowered so that the children can help solve the tasks. But make no mistake, all good strength and cooperation skills are needed if you are to help save Esbjerg. As an added bonus, you can meet the YouTuber Lakserytteren during the Quest around the streets of Esbjerg.
                 </p>
                 <div class="centered-button"><a href="https://www.universe.com/events/fantasy-quest-aftenquest-tickets-2PCHR4"
                     target="_blank"><button class="primary-button">BUY TICKET</button></a></div>
