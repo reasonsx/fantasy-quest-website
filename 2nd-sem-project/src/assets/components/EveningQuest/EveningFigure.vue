@@ -15,7 +15,7 @@
                 </div>
                     <div class="figure-svg"><img src="../../img/figure-evening.svg" alt="">
                     </div>
-                    <div class="centered-button"><a href="/day"><button class="primary-button">TAKE ME THERE</button></a></div>
+                    <div class="centered-button"><RouterLink to="/day"><button class="primary-button">TAKE ME THERE</button></RouterLink></div>
                 </div>
             </div>
         </div>
