@@ -10,12 +10,12 @@
                 </div> -->
                 <div class="figure-part">
                     <div class="question-part">
-                    <p>Maybe the night's horrorsa are not for you? <br>
-                        Embark on the Day Quest.</p>
+                    <p>Maybe the night's horrors are not for you? <br>
+                        Embark on the Day Quest!</p>
                 </div>
                     <div class="figure-svg"><img src="../../img/figure-evening.svg" alt="">
                     </div>
-                    <div class="centered-button"><a href="/day"><button class="primary-button">TAKE ME THERE</button></a></div>
+                    <div class="centered-button"><RouterLink to="/day"><button class="primary-button">TAKE ME THERE</button></RouterLink></div>
                 </div>
             </div>
         </div>

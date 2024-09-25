@@ -119,9 +119,9 @@ export default {
   .card-grid{
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 50px;
+      gap: 32px;
       width: 100%;
-      perspective: 1400px;
+      /* perspective: 1400px; */
   }
   .card{
       width: 250px;

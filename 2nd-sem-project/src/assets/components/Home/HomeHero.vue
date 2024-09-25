@@ -56,7 +56,6 @@
 
   </header>
     <div class="portals-background-container">
-            <!-- <h2>CHOOSE YOUR ADVENTURE</h2> -->
             <h2 id="welcome-text">CHOOSE YOUR ADVENTURE</h2>
             <div class="portals-container">
                 <div class="day-portal-container">
@@ -71,7 +70,6 @@
                     <a href="https://www.universe.com/events/family-quest-dagquest-tickets-C6PYX3" target="_blank"><button class="primary-button">BUY
                             TICKET</button></a>
                 </div>
-                <img src="../assets/img/gold-sword-svg.svg" alt="">
                 <div class="evening-portal-container">
                     <RouterLink to="/evening">
                         <div class="portal-box"><svg width="291" height="301" viewBox="0 0 291 301" fill="none" xmlns="http://www.w3.org/2000/svg">

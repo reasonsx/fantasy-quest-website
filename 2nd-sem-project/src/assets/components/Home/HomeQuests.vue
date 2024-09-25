@@ -11,7 +11,7 @@
                         teamwork amidst the bustling Fantasy Festival.
                     </p>
                     <div class="centered-button">
-                        <a href="/day"><button class="primary-button">READ MORE</button></a>
+                        <RouterLink to="/day"><button class="primary-button">READ MORE</button></RouterLink>
                     </div>
                 </div>
                 <div class="quest-container">
@@ -21,7 +21,7 @@
                         Fantasy Quest Esbjerg. Confront darkness, solve challenges, and save Esbjerg from evil forces as
                         twilight descends. Join alone or with friends for an unforgettable journey under the stars.</p>
                     <div class="centered-button">
-                        <a href="/evening"><button class="primary-button">READ MORE</button></a>
+                        <RouterLink to="/evening"><button class="primary-button">READ MORE</button></RouterLink>
                     </div>
                 </div>
             </div>
