@@ -1,1 +1,1 @@
-# 2nd-sem-project
+# 2nd-sem-project | Fantasy Quest Website
